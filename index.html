@@ -3,357 +3,366 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tanim VEER - Portfolio</title>
+    <title data-i18n="site_title">Tanim VEER - Portfolio</title>
 
-    <meta name="description" content="Portfolio de Tanim Veer, étudiant en informatique. Projets, compétences et contact.">
-    <meta name="keywords" content="Tanim Veer, Veer Tanim, Tanim, Veer, portfolio informatique, développeur, projets informatique">
+    <meta name="description" content="Portfolio de Tanim Veer, étudiant en informatique. Projets, compétences et contact." data-i18n="meta_description">
+    <meta name="keywords" content="Tanim Veer, Veer Tanim, Tanim, Veer, portfolio informatique, développeur, projets informatique" data-i18n="meta_keywords">
     <meta name="language" content="fr">
-    <meta property="og:title" content="Tanim Veer - Portfolio Informatique">
-    <meta property="og:description" content="Découvrez les projets et compétences de Tanim Veer, étudiant en informatique.">
+    <meta name="author" content="Tanim Veer">
+    <meta name="copyright" content="Tanim Veer">
+
+    <meta property="og:title" content="Tanim Veer - Portfolio Informatique" data-i18n="og_title">
+    <meta property="og:description" content="Découvrez les projets et compétences de Tanim Veer, étudiant en informatique." data-i18n="og_desc">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tanim-veer.fr">
     <meta property="og:image" content="https://tanim-veer.fr/image-presentation.jpg">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Tanim Veer - Portfolio Informatique">
-    <meta name="twitter:description" content="Découvrez les projets et compétences de Tanim Veer, étudiant en informatique.">
-    <meta name="twitter:image" content="https://tanim-veer.fr/image-presentation.jpg">
 
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Person",
-            "name": "Tanim Veer",
-            "url": "https://tanim-veer.fr",
-            "sameAs": [
-                "https://www.facebook.com/profile.php?id=61575030471158",
-                "https://x.com/tanim_veer",
-                "https://www.linkedin.com/in/tanim-veer-06a89222b/",
-                "https://github.com/tanim-veer"
-            ]
-        }
-    </script>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tanim Veer - Portfolio Informatique" data-i18n="tw_title">
+    <meta name="twitter:description" content="Découvrez les projets et compétences de Tanim Veer, étudiant en informatique." data-i18n="tw_desc">
+    <meta name="twitter:image" content="https://tanim-veer.fr/image-presentation.jpg">
 
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!------------------------------- NavBar ------------------------------->
 <nav class="navbar">
     <div class="container">
-        <a href="#" class="logo">Tanim VEER</a>
+        <a href="#" class="logo" data-i18n="logo_name">Tanim VEER</a>
+
         <div class="nav-links">
-            <a href="#about">À propos</a>
-            <a href="#skills">Compétences</a>
-            <a href="#parcours">Parcours</a>
-            <a href="#projects">Projets</a>
-            <a href="#contact">Contact</a>
+            <a href="#about" data-i18n="nav_about">À propos</a>
+            <a href="#skills" data-i18n="nav_skills">Compétences</a>
+            <a href="#parcours" data-i18n="nav_parcours">Parcours</a>
+            <a href="#projects" data-i18n="nav_projects">Projets</a>
+            <a href="#contact" data-i18n="nav_contact">Contact</a>
+        </div>
+
+        <div class="controls">
+            <button id="langToggle">EN</button>
+            <button id="themeToggle"><i class="fa-solid fa-moon"></i></button>
         </div>
     </div>
 </nav>
 
-<!------------------------------- Hero ------------------------------->
 <section class="hero" id="home">
     <div class="container">
-        <h1>Étudiant en informatique</h1>
-        <p>Passionné par la cybersécurité et motivé à l'explorer <span class="cyber-icon">🔒</span></p>
+        <h1 data-i18n="hero_title">Tanim VEER — Développeur</h1>
+        <p data-i18n="hero_subtitle">
+            Étudiant en BUT2 Informatique à l'Université Paris Cité • Recherche un stage de 8 semaines à partir du 13 avril 2025.
+        </p>
+
         <div class="cta-buttons">
-            <a href="#contact" class="cta-button">Me contacter</a>
-            <a href="#cv" class="cta-button">Mon CV</a>
+            <a href="#contact" class="cta-button" data-i18n="btn_contact">Me contacter</a>
+            <a href="#cv" class="cta-button" data-i18n="btn_cv">Télécharger mon CV</a>
         </div>
     </div>
 </section>
 
-
-<!------------------------------- A propos ------------------------------->
 <section class="about" id="about">
     <div class="container">
-        <h2>À propos de moi</h2>
+        <h2 data-i18n="about_title">À propos de moi</h2>
         <div class="about-content">
             <div class="about-text">
-                <p>Étudiant en informatique à l’IUT de Paris – Rives de Seine, je suis passionné par la cybersécurité et motivé à explorer cet univers en constante évolution. Curieux et rigoureux, j’ai acquis des bases solides en algorithmique, développement web et gestion de bases de données, tout en développant mes compétences en travail d’équipe à travers des expériences professionnelles variées. En dehors de la tech, j’aime voyager, pratiquer le basket et le volley, et m’investir dans des activités associatives pour aider les autres. Mon objectif ? M’épanouir dans le domaine de la tech tout en contribuant à des projets innovants et sécurisés.</p>
+                <p data-i18n="about_text">
+                    Étudiant en BUT2 Informatique à l’IUT de Paris – Rives de Seine.
+                    Je développe des projets en Java, HTML/CSS, SQL, Python et Git.
+                    J’aime créer des applications propres, structurées et fonctionnelles.
+                    Objectif actuel : trouver un stage et m’épanouir dans le domaine de la tech tout en contribuant à des projets innovants.
+                </p>
             </div>
             <div class="about-hobbies">
-                <h3>Mes centres d'intérêt</h3>
+                <h3 data-i18n="hobbies_title">Mes centres d'intérêt</h3>
                 <ul>
-                    <li>Voyager ✈️</li>
-                    <li>Basket 🏀</li>
-                    <li>Volley 🏐</li>
-                    <li>Activités associatives 🤝</li>
+                    <li data-i18n="hobby1">Voyager ✈️</li>
+                    <li data-i18n="hobby2">Basketball 🏀</li>
+                    <li data-i18n="hobby3">Musculation 🏋️</li>
+                    <li data-i18n="hobby4">Activités associatives 🤝</li>
                 </ul>
             </div>
         </div>
     </div>
 </section>
 
-
-<!------------------------------- Compétences ------------------------------->
 <section class="skills" id="skills">
     <div class="container">
-        <h2>Compétences</h2>
+        <h2 data-i18n="skills_title">Compétences</h2>
         <div class="skills-grid">
-            <!-- Compétences techniques -->
+
             <div class="skill-category">
-                <h3>Compétences techniques</h3>
+                <h3 data-i18n="skills_tech_title">Compétences techniques</h3>
                 <div class="skill-items">
+
                     <div class="skill-group">
-                        <h4><i class="fas fa-code"></i> Développement</h4>
-                        <div class="progress-bar">
-                            <div class="progress"></div>
-                        </div>
-                        <p class="description">Développement web (HTML, CSS), Programmation (C/C++, C#, Python, Java, VB.NET)</p>
+                        <h4 data-i18n="skills_lang_title"><i class="fas fa-code"></i> Languages</h4>
+                        <p class="description" data-i18n="skills_lang_desc">Java, C/C++, Python, VB.NET, SQL, HTML/CSS, PHP</p>
                     </div>
+
                     <div class="skill-group">
-                        <h4><i class="fas fa-database"></i> Bases de données</h4>
-                        <div class="progress-bar">
-                            <div class="progress"></div>
-                        </div>
-                        <p class="description">Gestion de bases de données (SQL, MySQL)</p>
+                        <h4 data-i18n="skills_web_title"><i class="fas fa-code"></i> Développement Web</h4>
+                        <p class="description" data-i18n="skills_web_desc">
+                            Responsive design, Bootstrap, accessibilité, optimisation visuelle, Requêtes HTTP (GET/POST), JSON, Appels API (bases)
+                        </p>
                     </div>
+
                     <div class="skill-group">
-                        <h4><i class="fas fa-cogs"></i> Conception</h4>
-                        <div class="progress-bar">
-                            <div class="progress"></div>
-                        </div>
-                        <p class="description">Algorithmique, Modélisation UML, Développement d'interfaces graphiques</p>
+                        <h4 data-i18n="skills_db_title"><i class="fas fa-database"></i> Bases de données</h4>
+                        <p class="description" data-i18n="skills_db_desc">MySQL, PostgreSQL, PL/SQL, requêtes CRUD et jointures</p>
                     </div>
+
                     <div class="skill-group">
-                        <h4><i class="fas fa-tools"></i> Outils et systèmes</h4>
-                        <div class="progress-bar">
-                            <div class="progress"></div>
-                        </div>
-                        <p class="description">Git/GitHub (travail en équipe), Linux (bases), VirtualBox</p>
+                        <h4 data-i18n="skills_sys_title"><i class="fas fa-database"></i> Système & Réseaux</h4>
+                        <p class="description" data-i18n="skills_sys_desc">
+                            Linux (permissions, fichiers, commandes shell), Protocoles réseau (TCP/UDP, HTTP, DNS — notions), Assembleur x86 (notions)
+                        </p>
                     </div>
+
                     <div class="skill-group">
-                        <h4><i class="fas fa-shield-alt"></i> Cybersécurité</h4>
-                        <div class="progress-bar">
-                            <div class="progress"></div>
-                        </div>
-                        <p class="description">Notions de base, apprentissage en cours</p>
+                        <h4 data-i18n="skills_design_title"><i class="fas fa-cogs"></i> Conception</h4>
+                        <p class="description" data-i18n="skills_design_desc">
+                            POO, Modélisation UML, Interfaces graphiques, Structures de données
+                        </p>
                     </div>
+
+                    <div class="skill-group">
+                        <h4 data-i18n="skills_meth_title"><i class="fas fa-shield-alt"></i> Méthodes</h4>
+                        <p class="description" data-i18n="skills_meth_desc">
+                            Travail en équipe, Git workflow, Documentation de projets, Méthodologie Agile (Scrum)
+                        </p>
+                    </div>
+
                 </div>
             </div>
-            <!-- Compétences transversales -->
+
             <div class="skill-category">
-                <h3>Compétences transversales</h3>
-                <div class="skill-items">
-                    <div class="skill-group">
-                        <h4><i class="fas fa-users"></i> Travail en équipe et collaboration</h4>
-                        <div class="progress-bar">
-                            <div class="progress"></div>
-                        </div>
-                    </div>
-                    <div class="skill-group">
-                        <h4><i class="fas fa-lightbulb"></i> Rigueur et curiosité pour l'apprentissage</h4>
-                        <div class="progress-bar">
-                            <div class="progress"></div>
-                        </div>
-                    </div>
-                    <div class="skill-group">
-                        <h4><i class="fas fa-puzzle-piece"></i> Résolution de problèmes complexes</h4>
-                        <div class="progress-bar">
-                            <div class="progress"></div>
-                        </div>
-                    </div>
-                    <div class="skill-group">
-                        <h4><i class="fas fa-clock"></i> Gestion du temps et des priorités</h4>
-                        <div class="progress-bar">
-                            <div class="progress"></div>
-                        </div>
-                    </div>
-                    <div class="skill-group">
-                        <h4><i class="fas fa-comments"></i> Communication claire et efficace</h4>
-                        <div class="progress-bar">
-                            <div class="progress"></div>
-                        </div>
-                    </div>
-                    <div class="skill-group">
-                        <h4><i class="fas fa-sync-alt"></i> Adaptabilité et apprentissage rapide</h4>
-                        <div class="progress-bar">
-                            <div class="progress"></div>
-                        </div>
-                    </div>
-                    <div class="skill-group">
-                        <h4><i class="fas fa-brain"></i> Esprit d’analyse et synthèse</h4>
-                        <div class="progress-bar">
-                            <div class="progress"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Outils maîtrisés -->
-            <div class="skill-category">
-                <h3>Outils maîtrisés</h3>
+                <h3 data-i18n="skills_tools_title">Outils maîtrisés</h3>
                 <div class="skill-items tools-grid">
+
                     <div class="tool-item">
-                        <h4><i class="fas fa-laptop-code"></i> Environnements de développement</h4>
-                        <div class="progress-bar">
-                            <div class="progress"></div>
-                        </div>
-                        <p>Visual Studio Code, IntelliJ IDEA, Eclipse, Figma (bases, pour le design d’interfaces)</p>
+                        <h4 data-i18n="skills_env_title"><i class="fas fa-laptop-code"></i> Environnements de développement</h4>
+                        <p data-i18n="skills_env_desc">Git, VS Code, IntelliJ IDEA, Eclipse, VirtualBox, Figma, Linux</p>
                     </div>
+
                     <div class="tool-item">
-                        <h4><i class="fas fa-briefcase"></i> Bureautique et collaboration</h4>
-                        <div class="progress-bar">
-                            <div class="progress"></div>
-                        </div>
-                        <p>Microsoft Office, Google Workspace, Trello (gestion de projets), Notion (organisation et prise de notes)</p>
+                        <h4 data-i18n="skills_collab_title"><i class="fas fa-briefcase"></i> Bureautique & collaboration</h4>
+                        <p data-i18n="skills_collab_desc">Microsoft Office, Google Workspace, Trello, Notion, Discord</p>
                     </div>
+
                     <div class="tool-item">
-                        <h4><i class="fas fa-vial"></i> Tests et automatisation</h4>
-                        <div class="progress-bar">
-                            <div class="progress"></div>
-                        </div>
-                        <p>JUnit (bases, pour les tests unitaires en Java)</p>
+                        <h4 data-i18n="skills_test_title"><i class="fas fa-vial"></i> Tests & automatisation</h4>
+                        <p data-i18n="skills_test_desc">JUnit (tests unitaires)</p>
                     </div>
+
                     <div class="tool-item">
-                        <h4><i class="fas fa-code-branch"></i> Gestion de versions et collaboration</h4>
-                        <div class="progress-bar">
-                            <div class="progress"></div>
-                        </div>
-                        <p>GitHub</p>
+                        <h4 data-i18n="skills_git_title"><i class="fas fa-code-branch"></i> Versioning</h4>
+                        <p data-i18n="skills_git_desc">GitHub, Gitlab</p>
                     </div>
+
                 </div>
             </div>
+
         </div>
     </div>
 </section>
 
-
-<!------------------------------- Parcours ------------------------------->
 <section class="parcours" id="parcours">
-    <section class="timeline" id="education">
+    <section class="timeline">
         <div class="container">
-            <h2>Parcours</h2>
+            <h2 data-i18n="parcours_title">Parcours</h2>
             <div class="timeline-grid">
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3>Bachelor universitaire de technologie</h3>
-                        <p class="timeline-location">IUT de Paris - Rives de Seine</p>
-                        <p class="timeline-period">2024 - actuel</p>
+                        <h3 data-i18n="parcours_but_title">Bachelor universitaire de technologie</h3>
+                        <p class="timeline-location" data-i18n="parcours_but_loc">IUT de Paris - Rives de Seine</p>
+                        <p class="timeline-period" data-i18n="parcours_but_date">2024 - actuel</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3>Baccalauréat STI2D</h3>
-                        <p class="timeline-location">Lycée Louis-le-Grand - Paris</p>
-                        <p class="timeline-period">2022 - 2024</p>
+                        <h3 data-i18n="parcours_bac_title">Baccalauréat STI2D</h3>
+                        <p class="timeline-location" data-i18n="parcours_bac_loc">Lycée Louis-le-Grand - Paris</p>
+                        <p class="timeline-period" data-i18n="parcours_bac_date">2022 - 2024</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <!------- Experience ------->
-    <section class="experience" id="experience">
+    <section class="experience">
         <div class="container">
-            <h2>Expériences professionnelles</h2>
+            <h2 data-i18n="exp_title">Expériences professionnelles</h2>
             <div class="experience-grid">
+
                 <div class="experience-item">
                     <div class="experience-content">
-                        <h3>Employé Polyvalent</h3>
-                        <p class="experience-company">Safran Market - Paris</p>
-                        <p class="experience-period">Juillet 2022 - Janvier 2023</p>
-                        <p class="experience-description">Gestion des stocks, réapprovisionnement des rayons et traitement des transactions en caisse</p>
+                        <h3 data-i18n="exp_viva_role">Bénévole</h3>
+                        <p class="experience-company" data-i18n="exp_viva_company">VivaTech2025</p>
+                        <p class="experience-period" data-i18n="exp_viva_date">Juin 2025</p>
+                        <p class="experience-description" data-i18n="exp_viva_desc">
+                            Participation au bon fonctionnement d’un évènement majeur (150 000+ participants), accueil des visiteurs et assistance aux équipes sur place
+                        </p>
                     </div>
                 </div>
+
                 <div class="experience-item">
                     <div class="experience-content">
-                        <h3>Stagiaire</h3>
-                        <p class="experience-company">Cabinet d'avocat Faycal Megherbi - Paris</p>
-                        <p class="experience-period">Mars 2020 - Avril 2020</p>
-                        <p class="experience-description">Assistance dans la préparation de dossiers juridiques et recherches documentaires pour soutenir les avocats dans leurs démarches.</p>
+                        <h3 data-i18n="exp_shop_role">Employé Polyvalent</h3>
+                        <p class="experience-company" data-i18n="exp_shop_company">Azban Market - Paris</p>
+                        <p class="experience-period" data-i18n="exp_shop_date">Juillet 2022 - Janvier 2023</p>
+                        <p class="experience-description" data-i18n="exp_shop_desc">
+                            Gestion des stocks, réapprovisionnement des rayons et traitement des transactions en caisse
+                        </p>
                     </div>
                 </div>
+
+                <div class="experience-item">
+                    <div class="experience-content">
+                        <h3 data-i18n="exp_avocat_role">Stagiaire</h3>
+                        <p class="experience-company" data-i18n="exp_avocat_company">Cabinet d'avocat Faycal Megherbi - Paris</p>
+                        <p class="experience-period" data-i18n="exp_avocat_date">Mars 2020 - Avril 2020</p>
+                        <p class="experience-description" data-i18n="exp_avocat_desc">
+                            Assistance dans la préparation de dossiers juridiques et recherches documentaires pour soutenir les avocats dans leurs démarches.
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 </section>
 
-<!------------------------------- Projets ------------------------------->
 <section class="projects" id="projects">
     <div class="container">
-        <h2>Mes Projets</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="absences.jpeg" alt="Project 1" />
-                </div>
-                <div class="project-content">
-                    <h3>Gestion d'absences d'une université</h3>
-                    <p class="project-description">Application permettant de suivre les absences des étudiants, avec une règle de défaillance automatique après 5 absences. J’ai développé ce projet en [précise le langage] pour automatiser la gestion administrative.</p>
-                    <p class="project-role">Lien : </p>
-                    <div class="project-links">
-                        <a href="https://github.com/tanimvr?tab=repositories" class="project-link">GitHub</a>
-                    </div>
-                </div>
-            </div>
+        <h2 data-i18n="project_title">Mes Projets</h2>
 
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="octoverso.jpeg" alt="Project 2" />
-                </div>
-                <div class="project-content">
-                    <h3>Jeu de société : Octo Verso</h3>
-                    <p class="project-description">Jeu de lettres stratégique pour 2 joueurs, où l’objectif est de se débarrasser de ses lettres en formant des mots sur un rail pivotant avec des tuiles double-face. Le projet a été fait avec un partenaire et nous avons utilisé le language C</p>
-                    <p class="project-role">Lien :</p>
-                    <div class="project-links">
-                        <a href="https://github.com/tanimvr?tab=repositories" class="project-link">GitHub</a>
-                    </div>
-                </div>
+        <a href="https://github.com/tanim-veer/" class="project-card">
+            <div class="project-image">
+                <img src="img/salut.jpeg" alt="">
             </div>
+            <div class="project-content">
+                <h3 data-i18n="p1_title">Refonte du site de l'Armée du Salut (en cours)</h3>
+                <p class="project-description" data-i18n="p1_desc">
+                    Refonte moderne de plusieurs pages du site : amélioration de l’ergonomie, correction des incohérences graphiques,
+                    optimisation visuelle et ajout d’une navigation plus intuitive.
+                </p>
+                <p class="project-role" data-i18n="tech_used">Technologies utilisées :</p>
+                <p class="technos">HTML</p><p class="technos">CSS</p><p class="technos">JavaScript</p>
+            </div>
+        </a>
 
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="Dijkstra.png" alt="" />
-                </div>
-                <div class="project-content">
-                    <h3>Algorithme de Dijkstra</h3>
-                    <p class="project-description">Algorithme de recherche du plus court chemin dans un graphe pondéré, utilisé pour trouver le trajet optimal entre deux nœuds. J’ai implémenté cet algorithme en Java pour résoudre des problèmes de routage et d’optimisation de chemins.</p>
-                    <p class="project-role">Lien : </p>
-                    <div class="project-links">
-                        <a href="https://github.com/tanimvr?tab=repositories" class="project-link">GitHub</a>
-                    </div>
-                </div>
+        <a href="https://github.com/tanim-veer/java-graphes-labyrinthe" class="project-card">
+            <div class="project-image">
+                <img src="img/Dijkstra.png" alt="">
             </div>
-        </div>
+            <div class="project-content">
+                <h3 data-i18n="p2_title">Algorithme de Dijkstra</h3>
+                <p class="project-description" data-i18n="p2_desc">
+                    Algorithme de recherche du plus court chemin dans un graphe pondéré, utilisé pour trouver le trajet optimal
+                    entre deux nœuds, avec visualisation dans un labyrinthe.
+                </p>
+                <p class="project-role" data-i18n="tech_used">Technologies utilisées :</p>
+                <p class="technos">Java</p>
+            </div>
+        </a>
+
+        <a href="https://github.com/tanim-veer/memory-game-vbnet" class="project-card">
+            <div class="project-image">
+                <img src="img/memory.jpeg" alt="">
+            </div>
+            <div class="project-content">
+                <h3 data-i18n="p3_title">Jeu de Memory</h3>
+                <p class="project-description" data-i18n="p3_desc">
+                    Jeu de mémoire pour 2 joueurs, réalisé en VB.NET avec gestion du plateau, comparaison des cartes, affichage du score et fin de partie automatique.
+                </p>
+                <p class="project-role" data-i18n="tech_used">Technologies utilisées :</p>
+                <p class="technos">VB.NET</p>
+            </div>
+        </a>
+
+        <a href="https://github.com/tanim-veer/" class="project-card">
+            <div class="project-image">
+                <img src="img/absences.jpeg" alt="">
+            </div>
+            <div class="project-content">
+                <h3 data-i18n="p4_title">Gestion d'absences</h3>
+                <p class="project-description" data-i18n="p4_desc">
+                    Application console permettant de suivre les absences des étudiants, défaillance automatique après 5 absences, stockage et affichage des résultats.
+                </p>
+                <p class="project-role" data-i18n="tech_used">Technologies utilisées :</p>
+                <p class="technos">C</p>
+            </div>
+        </a>
+
+        <a href="https://github.com/tanim-veer/octoverso-c-game" class="project-card">
+            <div class="project-image">
+                <img src="img/octoverso.jpeg" alt="">
+            </div>
+            <div class="project-content">
+                <h3 data-i18n="p5_title">Jeu de société : Octo Verso</h3>
+                <p class="project-description" data-i18n="p5_desc">
+                    Jeu de lettres stratégique en C : former des mots avec des tuiles double-face sur un rail pivotant. Gestion du plateau, des tours et de la fin de partie.
+                </p>
+                <p class="project-role" data-i18n="tech_used">Technologies utilisées :</p>
+                <p class="technos">C</p>
+            </div>
+        </a>
     </div>
 </section>
 
-
-<!------------------------------- Contact ------------------------------->
 <section class="contact" id="contact">
     <div class="container">
-        <h2>Contact</h2>
+        <h2 data-i18n="contact_title" data-fr="Contact">Contact</h2>
+
         <div class="contact-content">
-            <!-- Formulaire à gauche -->
+            <!-- Formulaire -->
             <form class="contact-form">
-                <input type="text" placeholder="Nom *" required>
-                <input type="email" placeholder="Email *" required>
-                <textarea placeholder="Message *" required></textarea>
-                <button type="submit" class="cta-button">Envoyer</button>
+                <input type="text" required
+                       placeholder="Nom *"
+                       data-i18n-placeholder="contact_name"
+                       data-fr-placeholder="Nom *">
+
+                <input type="email" required
+                       placeholder="Email *"
+                       data-i18n-placeholder="contact_email"
+                       data-fr-placeholder="Email *">
+
+                <textarea required
+                          placeholder="Message *"
+                          data-i18n-placeholder="contact_msg"
+                          data-fr-placeholder="Message *"></textarea>
+
+                <button type="submit" class="cta-button"
+                        data-i18n="contact_send" data-fr="Envoyer">Envoyer</button>
             </form>
-            <!-- Boutons à droite -->
+
+            <!-- Boutons -->
             <div class="contact-links">
                 <a href="https://www.linkedin.com/in/tanim-veer-06a89222b/" class="contact-link">
-                    <span>LinkedIn</span>
+                    <span data-i18n="contact_linkedin" data-fr="LinkedIn">LinkedIn</span>
                 </a>
+
                 <a href="https://github.com/tanimvr?tab=repositories" class="contact-link">
-                    <span>GitHub</span>
+                    <span data-i18n="contact_github" data-fr="GitHub">GitHub</span>
                 </a>
+
                 <a href="mailto:veertanim@gmail.com" class="contact-link">
-                    <span>Email : veertanim@gmail.com</span>
+                    <span data-i18n="contact_email_text" data-fr="Email : veertanim@gmail.com">Email : veertanim@gmail.com</span>
                 </a>
-                <a href="tel:+33612345678" class="contact-link">
-                    <span>Tél : +33 7 58 23 12 89</span>
+
+                <a href="tel:+33758231289" class="contact-link">
+                    <span data-i18n="contact_phone" data-fr="Tél : +33 7 58 23 12 89">Tél : +33 7 58 23 12 89</span>
                 </a>
+
                 <a href="https://www.google.com/maps/place/Paris,+France" class="contact-link">
-                    <span>Localisation : Paris, Ile de France</span>
+                    <span data-i18n="contact_location" data-fr="Localisation : Paris, Ile de France">Localisation : Paris, Ile de France</span>
                 </a>
             </div>
         </div>
     </div>
 </section>
+
+
+<script src="script.js"></script>
 </body>
 </html>
