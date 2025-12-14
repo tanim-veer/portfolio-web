@@ -1,6 +1,5 @@
 /* ===============================
    i18n complet FR <-> EN + mémoire
-   (Nettoyé : Uniquement les éléments présents dans le HTML)
 ================================= */
 
 const I18N = {
@@ -10,10 +9,12 @@ const I18N = {
         nav_skills: "Compétences",
         nav_projects: "Projets",
         nav_contact: "Contact",
-        hero_title: "Tanim VEER — Développeur",
-        hero_subtitle: "Étudiant en BUT2 Informatique à l'Université Paris Cité • Recherche un stage de 8 semaines à partir du 13 avril 2025.",
+
+        hero_title: "Tanim VEER <br> <span class=\"gradient-text\">Développeur Freelance</span>",
+        hero_subtitle: "Étudiant en BUT2 Informatique à l'Université Paris Cité • Recherche un stage de 8 semaines à 16 semaines à partir du 6 avril 2026.",
+
         btn_contact: "Me contacter",
-        btn_cv: "Télécharger mon CV",
+        btn_cv: "Voir mon CV",
 
         // META/TITLE
         site_title: "Tanim VEER - Portfolio",
@@ -27,18 +28,18 @@ const I18N = {
         // SKILLS
         skills_title: "Compétences",
         skills_tech_title: "Compétences techniques",
-        skills_lang_title: "Languages",
-        skills_lang_desc: "Java, C/C++, Python, VB.NET, SQL, HTML/CSS, PHP",
-        skills_web_title: "Développement Web",
+        skills_lang_title: "<i class=\"fas fa-code\"></i> Languages", // Ajout des icônes dans la trad
+        skills_lang_desc: "Java, C/C++, Python, Javascript, VB.NET, SQL, HTML/CSS, PHP",
+        skills_web_title: "<i class=\"fas fa-globe\"></i> Développement Web",
         skills_web_desc: "Responsive design, Bootstrap, accessibilité, optimisation visuelle, Requêtes HTTP (GET/POST), JSON, Appels API (bases)",
-        skills_db_title: "Bases de données",
+        skills_db_title: "<i class=\"fas fa-database\"></i> Bases de données",
         skills_db_desc: "MySQL, PostgreSQL, PL/SQL, requêtes CRUD et jointures",
-        skills_sys_title: "Système & Réseaux",
+        skills_sys_title: "<i class=\"fas fa-server\"></i> Système & Réseaux",
         skills_sys_desc: "Linux (permissions, fichiers, commandes shell), Protocoles réseau (TCP/UDP, HTTP, DNS — notions), Assembleur x86 (notions)",
-        skills_design_title: "Conception",
+        skills_design_title: "<i class=\"fas fa-cogs\"></i> Conception",
         skills_design_desc: "POO, Modélisation UML, Interfaces graphiques, Structures de données",
-        skills_meth_title: "Méthodes",
-        skills_meth_desc: "Travail en équipe, Git workflow, Documentation de projets, Méthodologie Agile (Scrum)",
+        skills_meth_title: "<i class=\"fas fa-shield-alt\"></i> Méthodes",
+        skills_meth_desc: "Travail en équipe, Git workflow, Documentation de projets, Méthodologie Agile (Scrum), Maquettage, principe SOLID",
 
         skills_tools_title: "Outils maîtrisés",
         skills_env_title: "Environnements de développement",
@@ -73,15 +74,15 @@ const I18N = {
 
         // CONTACT
         contact_title: "Contact",
-        contact_send: "Envoyer",
+        contact_send: "Envoyer <i class=\"fas fa-paper-plane\"></i>",
         contact_name: "Nom *",
         contact_email: "Email *",
         contact_msg: "Message *",
         contact_linkedin: "LinkedIn",
         contact_github: "GitHub",
-        contact_email_text: "Email : veertanim@gmail.com",
-        contact_phone: "Tél : +33 7 58 23 12 89",
-        contact_location: "Localisation : Paris, Ile-de-France",
+        contact_email_text: "veertanim@gmail.com",
+        contact_phone: "+33 7 58 23 12 89",
+        contact_location: "Paris, Ile de France",
     },
 
     en: {
@@ -90,10 +91,13 @@ const I18N = {
         nav_skills: "Skills",
         nav_projects: "Projects",
         nav_contact: "Contact",
-        hero_title: "Tanim VEER — Developer",
-        hero_subtitle: "2nd-year CS student at Université Paris Cité • Looking for an 8-week internship from April 13, 2025.",
+
+        // Version EN mise à jour aussi pour être cohérente
+        hero_title: "Tanim VEER <br> <span class=\"gradient-text\">Freelance Developer</span>",
+        hero_subtitle: "2nd-year CS student at Université Paris Cité • Looking for an internship (8 to 16 weeks) from April 6, 2026.",
+
         btn_contact: "Contact me",
-        btn_cv: "Download my CV",
+        btn_cv: "View my CV",
 
         // META/TITLE
         site_title: "Tanim VEER - Portfolio",
@@ -107,18 +111,18 @@ const I18N = {
         // SKILLS
         skills_title: "Skills",
         skills_tech_title: "Technical Skills",
-        skills_lang_title: "Languages",
-        skills_lang_desc: "Java, C/C++, Python, VB.NET, SQL, HTML/CSS, PHP",
-        skills_web_title: "Web Development",
+        skills_lang_title: "<i class=\"fas fa-code\"></i> Languages",
+        skills_lang_desc: "Java, C/C++, Python, Javascript, VB.NET, SQL, HTML/CSS, PHP",
+        skills_web_title: "<i class=\"fas fa-globe\"></i> Web Development",
         skills_web_desc: "Responsive design, Bootstrap, accessibility, UI optimization, HTTP requests (GET/POST), JSON, basic API calls",
-        skills_db_title: "Databases",
+        skills_db_title: "<i class=\"fas fa-database\"></i> Databases",
         skills_db_desc: "MySQL, PostgreSQL, PL/SQL, CRUD queries and joins",
-        skills_sys_title: "Systems & Networks",
+        skills_sys_title: "<i class=\"fas fa-server\"></i> Systems & Networks",
         skills_sys_desc: "Linux basics, TCP/UDP, HTTP, DNS, x86 assembly (basics)",
-        skills_design_title: "Design & Architecture",
+        skills_design_title: "<i class=\"fas fa-cogs\"></i> Design & Architecture",
         skills_design_desc: "OOP, UML, GUI development, data structures",
-        skills_meth_title: "Methods",
-        skills_meth_desc: "Teamwork, Git workflow, documentation, Agile (Scrum)",
+        skills_meth_title: "<i class=\"fas fa-shield-alt\"></i> Methods",
+        skills_meth_desc: "Teamwork, Git workflow, documentation, Agile (Scrum), SOLID principles",
 
         skills_tools_title: "Tools",
         skills_env_title: "Development Environments",
@@ -153,15 +157,15 @@ const I18N = {
 
         // CONTACT
         contact_title: "Contact",
-        contact_send: "Send",
+        contact_send: "Send <i class=\"fas fa-paper-plane\"></i>",
         contact_name: "Name *",
         contact_email: "Email *",
         contact_msg: "Message *",
         contact_linkedin: "LinkedIn",
         contact_github: "GitHub",
-        contact_email_text: "Email: veertanim@gmail.com",
-        contact_phone: "Phone: +33 7 58 23 12 89",
-        contact_location: "Location: Paris, France",
+        contact_email_text: "veertanim@gmail.com",
+        contact_phone: "+33 7 58 23 12 89",
+        contact_location: "Paris, France",
     }
 };
 
@@ -184,7 +188,7 @@ function applyLanguage(lang) {
             document.title = val;
             el.textContent = val;
         } else {
-            el.textContent = val;
+            el.innerHTML = val;
         }
     });
 

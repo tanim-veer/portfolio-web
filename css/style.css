@@ -1,5 +1,4 @@
 :root {
-    /* Palette Dark Mode "Pro" */
     --bg-dark: #0a0a0a;
     --bg-card: rgba(255, 255, 255, 0.03);
     --bg-card-hover: rgba(255, 255, 255, 0.06);
@@ -166,7 +165,6 @@ section { padding: 5rem 0; }
 
 .skill-category {
     padding: 2rem;
-    /* Le conteneur principal reste glass mais discret */
 }
 
 .skill-category h3 {
@@ -185,21 +183,21 @@ section { padding: 5rem 0; }
 
 /* --- LE STYLE DES CARTES INDIVIDUELLES --- */
 .skill-group, .tool-item {
-    background: rgba(255, 255, 255, 0.02); /* Fond très léger par défaut */
-    border: 1px solid rgba(255, 255, 255, 0.05); /* Bordure discrète */
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
     padding: 1.2rem;
     border-radius: 12px;
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); /* Animation fluide */
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     position: relative;
     overflow: hidden;
 }
 
 /* L'effet au survol (HOVER) */
 .skill-group:hover, .tool-item:hover {
-    transform: translateY(-5px); /* Ça monte */
-    background: rgba(255, 255, 255, 0.08); /* Le fond s'éclaire */
-    border-color: var(--primary); /* La bordure devient bleue */
-    box-shadow: 0 10px 20px -10px rgba(59, 130, 246, 0.3); /* Légère lueur */
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--primary);
+    box-shadow: 0 10px 20px -10px rgba(59, 130, 246, 0.3);
 }
 
 .skill-group h4, .tool-item h4 {
