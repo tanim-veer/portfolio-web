@@ -21,16 +21,18 @@
     <meta name="twitter:title" content="Tanim Veer - Portfolio Informatique" data-i18n="tw_title">
     <meta name="twitter:description" content="Découvrez les projets et compétences de Tanim Veer, étudiant en informatique." data-i18n="tw_desc">
     <meta name="twitter:image" content="https://tanim-veer.fr/image-presentation.jpg">
+
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
-
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+<div class="background-glow"></div>
+
 <nav class="navbar">
-    <div class="container">
+    <div class="nav-content">
         <a href="#" class="logo" data-i18n="logo_name">Tanim VEER</a>
 
         <div class="nav-links">
@@ -49,15 +51,16 @@
 </nav>
 
 <section class="hero" id="home">
-    <div class="container">
-        <h1 data-i18n="hero_title">Tanim VEER — Développeur Freelance</h1>
+    <div class="container hero-container">
+        <h1 data-i18n="hero_title">Tanim VEER <br> <span class="gradient-text">Développeur Freelance</span></h1>
+
         <p data-i18n="hero_subtitle">
-            & Étudiant en BUT2 Informatique à l'Université Paris Cité • Recherche un stage de 8 semaines à 16 semaines à partir du 6 avril 2026.
+            Étudiant en BUT2 Informatique à l'Université Paris Cité • Recherche un stage de 8 semaines à 16 semaines à partir du 6 avril 2026.
         </p>
 
         <div class="cta-buttons">
-            <a href="#contact" class="cta-button" data-i18n="btn_contact">Me contacter</a>
-            <a href="Tanim-VEER-CV-Informatique.pdf" class="cta-button" data-i18n="btn_cv">Voir mon CV</a>
+            <a href="#contact" class="cta-button primary" data-i18n="btn_contact">Me contacter</a>
+            <a href="Tanim-VEER-CV-Informatique.pdf" class="cta-button secondary" data-i18n="btn_cv">Voir mon CV</a>
         </div>
     </div>
 </section>
@@ -67,7 +70,7 @@
         <h2 data-i18n="skills_title">Compétences</h2>
         <div class="skills-grid">
 
-            <div class="skill-category">
+            <div class="skill-category glass-card">
                 <h3 data-i18n="skills_tech_title">Compétences techniques</h3>
                 <div class="skill-items">
 
@@ -77,7 +80,7 @@
                     </div>
 
                     <div class="skill-group">
-                        <h4 data-i18n="skills_web_title"><i class="fas fa-code"></i> Développement Web</h4>
+                        <h4 data-i18n="skills_web_title"><i class="fas fa-globe"></i> Développement Web</h4>
                         <p class="description" data-i18n="skills_web_desc">
                             Responsive design, Bootstrap, accessibilité, optimisation visuelle, Requêtes HTTP (GET/POST), JSON, Appels API (bases)
                         </p>
@@ -89,7 +92,7 @@
                     </div>
 
                     <div class="skill-group">
-                        <h4 data-i18n="skills_sys_title"><i class="fas fa-database"></i> Système & Réseaux</h4>
+                        <h4 data-i18n="skills_sys_title"><i class="fas fa-server"></i> Système & Réseaux</h4>
                         <p class="description" data-i18n="skills_sys_desc">
                             Linux (permissions, fichiers, commandes shell), Protocoles réseau (TCP/UDP, HTTP, DNS — notions), Assembleur x86 (notions)
                         </p>
@@ -112,28 +115,38 @@
                 </div>
             </div>
 
-            <div class="skill-category">
+            <div class="skill-category glass-card">
                 <h3 data-i18n="skills_tools_title">Outils maîtrisés</h3>
                 <div class="skill-items tools-grid">
 
                     <div class="tool-item">
-                        <h4 data-i18n="skills_env_title"><i class="fas fa-laptop-code"></i> Environnements de développement</h4>
-                        <p data-i18n="skills_env_desc">Git, Github, VS Code, suite IntelliJ IDEA, Eclipse, VirtualBox, Figma, Linux, Oracle, Looping</p>
+                        <h4><i class="fas fa-laptop-code"></i> IDE & Éditeurs</h4>
+                        <p>VS Code, IntelliJ IDEA, Eclipse, Sublime Text</p>
                     </div>
 
                     <div class="tool-item">
-                        <h4 data-i18n="skills_collab_title"><i class="fas fa-briefcase"></i> Bureautique & collaboration</h4>
-                        <p data-i18n="skills_collab_desc">Microsoft Office, Google Workspace, Trello, Notion, Discord</p>
+                        <h4><i class="fas fa-server"></i> Système & Virtualisation</h4>
+                        <p>Linux (Ubuntu/Debian), VirtualBox, VMWare</p>
                     </div>
 
                     <div class="tool-item">
-                        <h4 data-i18n="skills_test_title"><i class="fas fa-vial"></i> Tests & automatisation</h4>
-                        <p data-i18n="skills_test_desc">JUnit (tests unitaires)</p>
+                        <h4><i class="fas fa-database"></i> Clients BDD & API</h4>
+                        <p>Looping (MCD)</p>
                     </div>
 
                     <div class="tool-item">
-                        <h4 data-i18n="skills_git_title"><i class="fas fa-code-branch"></i> Versioning</h4>
-                        <p data-i18n="skills_git_desc">GitHub, Gitlab</p>
+                        <h4><i class="fas fa-users"></i> Gestion & Collab.</h4>
+                        <p>Jira (Méthode Agile), Trello, Notion, Microsoft Teams, Discord, Suite Office</p>
+                    </div>
+
+                    <div class="tool-item">
+                        <h4><i class="fas fa-pen-nib"></i> UI/UX Design</h4>
+                        <p>Figma, Canva, Maquettage papier</p>
+                    </div>
+
+                    <div class="tool-item">
+                        <h4><i class="fas fa-code-branch"></i> DevOps & Qualité</h4>
+                        <p>Git, GitHub, GitLab, JUnit</p>
                     </div>
 
                 </div>
@@ -147,176 +160,212 @@
     <div class="container">
         <h2 data-i18n="project_title">Mes Projets</h2>
 
-        <a href="https://github.com/tanim-veer/" class="project-card">
-            <div class="project-image">
-                <img src="img/salut.jpeg" alt="">
-            </div>
-            <div class="project-content">
-                <h3 data-i18n="p1_title">Refonte du site de l'Armée du Salut (en cours)</h3>
-                <p class="project-description" data-i18n="p1_desc">
-                    Refonte moderne de plusieurs pages du site : amélioration de l’ergonomie, correction des incohérences graphiques,
-                    optimisation visuelle et ajout d’une navigation plus intuitive.
-                </p>
-                <p class="project-role" data-i18n="tech_used">Technologies utilisées :</p>
-                <p class="technos">HTML</p><p class="technos">CSS</p><p class="technos">JavaScript</p>
-            </div>
-        </a>
+        <div class="projects-grid">
+            <a href="https://github.com/tanim-veer/" class="project-card glass-card">
+                <div class="project-image">
+                    <img src="img/armee.png" alt="">
+                    <div class="overlay"><i class="fas fa-external-link-alt"></i></div>
+                </div>
+                <div class="project-content">
+                    <h3 data-i18n="p1_title">Refonte du site de l'Armée du Salut (en cours)</h3>
+                    <p class="project-description" data-i18n="p1_desc">
+                        Refonte moderne de plusieurs pages du site : amélioration de l’ergonomie, correction des incohérences graphiques,
+                        optimisation visuelle et ajout d’une navigation plus intuitive.
+                    </p>
+                    <p class="project-role" data-i18n="tech_used">Technologies utilisées :</p>
+                    <div class="tech-stack">
+                        <span class="technos">HTML</span><span class="technos">CSS</span><span class="technos">JavaScript</span>
+                    </div>
+                </div>
+            </a>
 
-        <a href="https://github.com/tanim-veer/java-graphes-labyrinthe" class="project-card">
-            <div class="project-image">
-                <img src="img/Dijkstra.png" alt="">
-            </div>
-            <div class="project-content">
-                <h3 data-i18n="p2_title">Algorithme de Dijkstra</h3>
-                <p class="project-description" data-i18n="p2_desc">
-                    Algorithme de recherche du plus court chemin dans un graphe pondéré, utilisé pour trouver le trajet optimal
-                    entre deux nœuds, avec visualisation dans un labyrinthe.
-                </p>
-                <p class="project-role" data-i18n="tech_used">Technologies utilisées :</p>
-                <p class="technos">Java</p>
-            </div>
-        </a>
+            <a href="https://github.com/tanim-veer/java-graphes-labyrinthe" class="project-card glass-card">
+                <div class="project-image">
+                    <img src="img/dijkstra.png" alt="">
+                    <div class="overlay"><i class="fas fa-code-branch"></i></div>
+                </div>
+                <div class="project-content">
+                    <h3 data-i18n="p2_title">Algorithme de Dijkstra</h3>
+                    <p class="project-description" data-i18n="p2_desc">
+                        Algorithme de recherche du plus court chemin dans un graphe pondéré, utilisé pour trouver le trajet optimal
+                        entre deux nœuds, avec visualisation dans un labyrinthe.
+                    </p>
+                    <p class="project-role" data-i18n="tech_used">Technologies utilisées :</p>
+                    <div class="tech-stack">
+                        <span class="technos">Java</span>
+                    </div>
+                </div>
+            </a>
 
-        <a href="https://github.com/tanim-veer/memory-game-vbnet" class="project-card">
-            <div class="project-image">
-                <img src="img/memory.jpeg" alt="">
-            </div>
-            <div class="project-content">
-                <h3 data-i18n="p3_title">Jeu de Memory</h3>
-                <p class="project-description" data-i18n="p3_desc">
-                    Jeu de mémoire pour 2 joueurs, réalisé en VB.NET avec gestion du plateau, comparaison des cartes, affichage du score et fin de partie automatique.
-                </p>
-                <p class="project-role" data-i18n="tech_used">Technologies utilisées :</p>
-                <p class="technos">VB.NET</p>
-            </div>
-        </a>
+            <a href="https://github.com/tanim-veer/memory-game-vbnet" class="project-card glass-card">
+                <div class="project-image">
+                    <img src="img/memorygame.jpeg" alt="">
+                    <div class="overlay"><i class="fas fa-gamepad"></i></div>
+                </div>
+                <div class="project-content">
+                    <h3 data-i18n="p3_title">Jeu de Memory</h3>
+                    <p class="project-description" data-i18n="p3_desc">
+                        Jeu de mémoire pour 2 joueurs, réalisé en VB.NET avec gestion du plateau, comparaison des cartes, affichage du score et fin de partie automatique.
+                    </p>
+                    <p class="project-role" data-i18n="tech_used">Technologies utilisées :</p>
+                    <div class="tech-stack">
+                        <span class="technos">VB.NET</span>
+                    </div>
+                </div>
+            </a>
 
-        <a href="https://github.com/tanim-veer/" class="project-card">
-            <div class="project-image">
-                <img src="img/" alt="">
-            </div>
-            <div class="project-content">
-                <h3 data-i18n="p3_title">Jeu d'échec</h3>
-                <p class="project-description" data-i18n="p3_desc">
+            <a href="https://github.com/tanim-veer/" class="project-card glass-card">
+                <div class="project-image">
+                    <img src="img/echec.png" alt="Jeu d'échec Java">
+                    <div class="overlay"><i class="fas fa-chess"></i></div>
+                </div>
+                <div class="project-content">
+                    <h3 data-i18n="p6_title">Jeu d'échec</h3>
+                    <p class="project-description" data-i18n="p6_desc">
+                        Développement d'un jeu d'échecs complet respectant les règles officielles.
+                        Implémentation de la logique de déplacement des pièces, validation des coups,
+                        détection des échecs et mat, et gestion de l'interface graphique pour deux joueurs.
+                    </p>
+                    <p class="project-role" data-i18n="tech_used">Technologies utilisées :</p>
+                    <div class="tech-stack">
+                        <span class="technos">Java</span>
+                    </div>
+                </div>
+            </a>
 
-                </p>
-                <p class="project-role" data-i18n="tech_used">Technologies utilisées :</p>
-                <p class="technos">Java</p>
-            </div>
-        </a>
+            <a href="https://github.com/tanim-veer/" class="project-card glass-card">
+                <div class="project-image">
+                    <img src="img/reseau.png" alt="Topologie Réseau">
+                    <div class="overlay"><i class="fas fa-network-wired"></i></div>
+                </div>
+                <div class="project-content">
+                    <h3 data-i18n="p7_title">Installation de services réseau</h3>
+                    <p class="project-description" data-i18n="p7_desc">
+                        Conception et simulation d’une topologie réseau d'entreprise complète.
+                        Configuration du routage, des commutateurs et segmentation par VLANs.
+                        Déploiement et sécurisation des services essentiels (DHCP, DNS, Serveur Web).
+                    </p>
+                    <p class="project-role" data-i18n="tech_used">Technologies utilisées :</p>
+                    <div class="tech-stack">
+                        <span class="technos">Cisco Packet Tracer</span>
+                    </div>
+                </div>
+            </a>
 
-        <a href="https://github.com/tanim-veer/" class="project-card">
-            <div class="project-image">
-                <img src="img/" alt="">
-            </div>
-            <div class="project-content">
-                <h3 data-i18n="p3_title">Installation de service réseau</h3>
-                <p class="project-description" data-i18n="p3_desc">
+            <a href="https://github.com/tanim-veer/" class="project-card glass-card">
+                <div class="project-image">
+                    <img src="img/bd.png" alt="Base de données">
+                    <div class="overlay"><i class="fas fa-database"></i></div>
+                </div>
+                <div class="project-content">
+                    <h3 data-i18n="p8_title">Exploitation d'une base de données</h3>
+                    <p class="project-description" data-i18n="p8_desc">
+                        Analyse du contexte métier et modélisation des données (MCD/MLD).
+                        Normalisation de la base pour garantir l'intégrité des données.
+                        Implémentation de la structure et rédaction de requêtes SQL complexes pour l'exploitation.
+                    </p>
+                    <p class="project-role" data-i18n="tech_used">Technologies utilisées :</p>
+                    <div class="tech-stack">
+                        <span class="technos">Oracle SQL</span>
+                    </div>
+                </div>
+            </a>
 
-                </p>
-                <p class="project-role" data-i18n="tech_used">Technologies utilisées :</p>
-                <p class="technos">Cisco</p>
-            </div>
-        </a>
+            <a href="https://github.com/tanim-veer/octoverso-c-game" class="project-card glass-card">
+                <div class="project-image">
+                    <img src="img/octoverso.png" alt="">
+                    <div class="overlay"><i class="fas fa-font"></i></div>
+                </div>
+                <div class="project-content">
+                    <h3 data-i18n="p5_title">Jeu de société : Octo Verso</h3>
+                    <p class="project-description" data-i18n="p5_desc">
+                        Jeu de lettres stratégique en C : former des mots avec des tuiles double-face sur un rail pivotant. Gestion du plateau, des tours et de la fin de partie.
+                    </p>
+                    <p class="project-role" data-i18n="tech_used">Technologies utilisées :</p>
+                    <div class="tech-stack">
+                        <span class="technos">C</span>
+                    </div>
+                </div>
+            </a>
 
-        <a href="https://github.com/tanim-veer/" class="project-card">
-            <div class="project-image">
-                <img src="img/" alt="">
-            </div>
-            <div class="project-content">
-                <h3 data-i18n="p3_title">Exploitation d'une base de données</h3>
-                <p class="project-description" data-i18n="p3_desc">
-
-                </p>
-                <p class="project-role" data-i18n="tech_used">Technologies utilisées :</p>
-                <p class="technos">Cisco</p>
-            </div>
-        </a>
-
-        <a href="https://github.com/tanim-veer/octoverso-c-game" class="project-card">
-            <div class="project-image">
-                <img src="img/octoverso.jpeg" alt="">
-            </div>
-            <div class="project-content">
-                <h3 data-i18n="p5_title">Jeu de société : Octo Verso</h3>
-                <p class="project-description" data-i18n="p5_desc">
-                    Jeu de lettres stratégique en C : former des mots avec des tuiles double-face sur un rail pivotant. Gestion du plateau, des tours et de la fin de partie.
-                </p>
-                <p class="project-role" data-i18n="tech_used">Technologies utilisées :</p>
-                <p class="technos">C</p>
-            </div>
-        </a>
-
-        <a href="https://github.com/tanim-veer/" class="project-card">
-            <div class="project-image">
-                <img src="img/absences.jpeg" alt="">
-            </div>
-            <div class="project-content">
-                <h3 data-i18n="p4_title">Gestion d'absences</h3>
-                <p class="project-description" data-i18n="p4_desc">
-                    Application console permettant de suivre les absences des étudiants, défaillance automatique après 5 absences, stockage et affichage des résultats.
-                </p>
-                <p class="project-role" data-i18n="tech_used">Technologies utilisées :</p>
-                <p class="technos">C</p>
-            </div>
-        </a>
-
+            <a href="https://github.com/tanim-veer/" class="project-card glass-card">
+                <div class="project-image">
+                    <img src="img/absence.png" alt="">
+                    <div class="overlay"><i class="fas fa-user-clock"></i></div>
+                </div>
+                <div class="project-content">
+                    <h3 data-i18n="p4_title">Gestion d'absences</h3>
+                    <p class="project-description" data-i18n="p4_desc">
+                        Application console permettant de suivre les absences des étudiants, défaillance automatique après 5 absences, stockage et affichage des résultats.
+                    </p>
+                    <p class="project-role" data-i18n="tech_used">Technologies utilisées :</p>
+                    <div class="tech-stack">
+                        <span class="technos">C</span>
+                    </div>
+                </div>
+            </a>
+        </div>
     </div>
 </section>
 
 <section class="contact" id="contact">
     <div class="container">
-        <h2 data-i18n="contact_title" data-fr="Contact">Contact</h2>
+        <div class="contact-wrapper glass-card">
 
-        <div class="contact-content">
-            <!-- Formulaire -->
-            <form class="contact-form">
-                <input type="text" required
-                       placeholder="Nom *"
-                       data-i18n-placeholder="contact_name"
-                       data-fr-placeholder="Nom *">
+            <div class="contact-info">
+                <h2 data-i18n="contact_title" data-fr="Contact">Contact</h2>
+                <div class="contact-methods">
+                    <a href="https://www.linkedin.com/in/tanim-veer-06a89222b/" class="method-item">
+                        <i class="fab fa-linkedin"></i>
+                        <span data-i18n="contact_linkedin" data-fr="LinkedIn">LinkedIn</span>
+                    </a>
 
-                <input type="email" required
-                       placeholder="Email *"
-                       data-i18n-placeholder="contact_email"
-                       data-fr-placeholder="Email *">
+                    <a href="https://github.com/tanimvr?tab=repositories" class="method-item">
+                        <i class="fab fa-github"></i>
+                        <span data-i18n="contact_github" data-fr="GitHub">GitHub</span>
+                    </a>
 
-                <textarea required
-                          placeholder="Message *"
-                          data-i18n-placeholder="contact_msg"
-                          data-fr-placeholder="Message *"></textarea>
+                    <a href="mailto:veertanim@gmail.com" class="method-item">
+                        <i class="fas fa-envelope"></i>
+                        <span data-i18n="contact_email_text" data-fr="Email : veertanim@gmail.com">veertanim@gmail.com</span>
+                    </a>
 
-                <button type="submit" class="cta-button"
-                        data-i18n="contact_send" data-fr="Envoyer">Envoyer</button>
-            </form>
+                    <a href="tel:+33758231289" class="method-item">
+                        <i class="fas fa-phone"></i>
+                        <span data-i18n="contact_phone" data-fr="Tél : +33 7 58 23 12 89">+33 7 58 23 12 89</span>
+                    </a>
 
-            <!-- Boutons -->
-            <div class="contact-links">
-                <a href="https://www.linkedin.com/in/tanim-veer-06a89222b/" class="contact-link">
-                    <span data-i18n="contact_linkedin" data-fr="LinkedIn">LinkedIn</span>
-                </a>
-
-                <a href="https://github.com/tanimvr?tab=repositories" class="contact-link">
-                    <span data-i18n="contact_github" data-fr="GitHub">GitHub</span>
-                </a>
-
-                <a href="mailto:veertanim@gmail.com" class="contact-link">
-                    <span data-i18n="contact_email_text" data-fr="Email : veertanim@gmail.com">Email : veertanim@gmail.com</span>
-                </a>
-
-                <a href="tel:+33758231289" class="contact-link">
-                    <span data-i18n="contact_phone" data-fr="Tél : +33 7 58 23 12 89">Tél : +33 7 58 23 12 89</span>
-                </a>
-
-                <a href="https://www.google.com/maps/place/Paris,+France" class="contact-link">
-                    <span data-i18n="contact_location" data-fr="Localisation : Paris, Ile de France">Localisation : Paris, Ile de France</span>
-                </a>
+                    <a href="https://www.google.com/maps/place/Paris,+France" class="method-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span data-i18n="contact_location" data-fr="Localisation : Paris, Ile de France">Paris, Ile de France</span>
+                    </a>
+                </div>
             </div>
+
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" required placeholder=" ">
+                    <label data-i18n="contact_name">Nom*</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" required placeholder=" ">
+                    <label data-i18n="contact_email">Email*</label>
+                </div>
+
+                <div class="form-group full">
+                    <textarea required placeholder=" "></textarea>
+                    <label data-i18n="contact_msg">Message*</label>
+                </div>
+
+                <button type="submit" class="cta-button primary" data-i18n="contact_send">
+                    Envoyer <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
         </div>
     </div>
 </section>
 
-
-<script src="script.js"></script>
+<script src="js/script.js"></script> -->
 </body>
 </html>

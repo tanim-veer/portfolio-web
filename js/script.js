@@ -1,14 +1,13 @@
 /* ===============================
    i18n complet FR <-> EN + mémoire
+   (Nettoyé : Uniquement les éléments présents dans le HTML)
 ================================= */
 
 const I18N = {
     fr: {
         // NAV / HERO
         logo_name: "Tanim VEER",
-        nav_about: "À propos",
         nav_skills: "Compétences",
-        nav_parcours: "Parcours",
         nav_projects: "Projets",
         nav_contact: "Contact",
         hero_title: "Tanim VEER — Développeur",
@@ -24,15 +23,6 @@ const I18N = {
         og_desc: "Découvrez les projets et compétences de Tanim Veer, étudiant en informatique.",
         tw_title: "Tanim Veer - Portfolio Informatique",
         tw_desc: "Découvrez les projets et compétences de Tanim Veer, étudiant en informatique.",
-
-        // ABOUT
-        about_title: "À propos de moi",
-        about_text: "Étudiant en BUT2 Informatique à l’IUT de Paris – Rives de Seine. Je développe des projets en Java, HTML/CSS, SQL, Python et Git. J’aime créer des applications propres, structurées et fonctionnelles. Objectif actuel : trouver un stage et m’épanouir dans le domaine de la tech tout en contribuant à des projets innovants.",
-        hobbies_title: "Mes centres d'intérêt",
-        hobby1: "Voyager ✈️",
-        hobby2: "Basketball 🏀",
-        hobby3: "Musculation 🏋️",
-        hobby4: "Activités associatives 🤝",
 
         // SKILLS
         skills_title: "Compétences",
@@ -60,29 +50,6 @@ const I18N = {
         skills_git_title: "Versioning",
         skills_git_desc: "GitHub, Gitlab",
 
-        // PARCOURS / EXP
-        parcours_title: "Parcours",
-        parcours_but_title: "Bachelor universitaire de technologie",
-        parcours_but_loc: "IUT de Paris - Rives de Seine",
-        parcours_but_date: "2024 - actuel",
-        parcours_bac_title: "Baccalauréat STI2D",
-        parcours_bac_loc: "Lycée Louis-le-Grand - Paris",
-        parcours_bac_date: "2022 - 2024",
-
-        exp_title: "Expériences professionnelles",
-        exp_viva_role: "Bénévole",
-        exp_viva_company: "VivaTech2025",
-        exp_viva_date: "Juin 2025",
-        exp_viva_desc: "Participation au bon fonctionnement d’un évènement majeur (150 000+ participants), accueil des visiteurs et assistance aux équipes sur place",
-        exp_shop_role: "Employé Polyvalent",
-        exp_shop_company: "Azban Market - Paris",
-        exp_shop_date: "Juillet 2022 - Janvier 2023",
-        exp_shop_desc: "Gestion des stocks, réapprovisionnement des rayons et traitement des transactions en caisse",
-        exp_avocat_role: "Stagiaire",
-        exp_avocat_company: "Cabinet d'avocat Faycal Megherbi - Paris",
-        exp_avocat_date: "Mars 2020 - Avril 2020",
-        exp_avocat_desc: "Assistance dans la préparation de dossiers juridiques et recherches documentaires pour soutenir les avocats dans leurs démarches.",
-
         // PROJECTS
         project_title: "Mes Projets",
         p1_title: "Refonte du site de l'Armée du Salut (en cours)",
@@ -95,6 +62,13 @@ const I18N = {
         p4_desc: "Application console permettant de suivre les absences des étudiants, défaillance automatique après 5 absences, stockage et affichage des résultats.",
         p5_title: "Jeu de société : Octo Verso",
         p5_desc: "Jeu de lettres stratégique en C : former des mots avec des tuiles double-face sur un rail pivotant. Gestion du plateau, des tours et de la fin de partie.",
+        p6_title: "Jeu d'échec",
+        p6_desc: "Développement d'un jeu d'échecs complet respectant les règles officielles. Implémentation de la logique, validation des coups, détection échecs/mat et interface graphique 2 joueurs.",
+        p7_title: "Installation de services réseau",
+        p7_desc: "Conception et simulation d’une topologie réseau d'entreprise complète (VLANs, Routage). Déploiement et sécurisation des services essentiels (DHCP, DNS, Serveur Web).",
+        p8_title: "Exploitation d'une base de données",
+        p8_desc: "Analyse métier, modélisation (MCD/MLD) et normalisation. Implémentation de la structure et rédaction de requêtes SQL complexes pour l'exploitation des données.",
+
         tech_used: "Technologies utilisées :",
 
         // CONTACT
@@ -113,9 +87,7 @@ const I18N = {
     en: {
         // NAV / HERO
         logo_name: "Tanim VEER",
-        nav_about: "About",
         nav_skills: "Skills",
-        nav_parcours: "Background",
         nav_projects: "Projects",
         nav_contact: "Contact",
         hero_title: "Tanim VEER — Developer",
@@ -131,15 +103,6 @@ const I18N = {
         og_desc: "Discover the projects and skills of Tanim Veer, CS student.",
         tw_title: "Tanim Veer - CS Portfolio",
         tw_desc: "Discover the projects and skills of Tanim Veer, CS student.",
-
-        // ABOUT
-        about_title: "About me",
-        about_text: "2nd-year Computer Science student at IUT Paris - Rives de Seine. I build clean, structured and functional apps with Java, SQL, Python and Web. Currently seeking an internship to learn and contribute to innovative projects.",
-        hobbies_title: "My interests",
-        hobby1: "Travelling ✈️",
-        hobby2: "Basketball 🏀",
-        hobby3: "Weight Training 🏋️",
-        hobby4: "Associative Activities 🤝",
 
         // SKILLS
         skills_title: "Skills",
@@ -167,29 +130,6 @@ const I18N = {
         skills_git_title: "Version Control",
         skills_git_desc: "GitHub, Gitlab",
 
-        // PARCOURS / EXP
-        parcours_title: "Background",
-        parcours_but_title: "Bachelor of Technology in CS",
-        parcours_but_loc: "IUT Paris - Rives de Seine",
-        parcours_but_date: "2024 - current",
-        parcours_bac_title: "Scientific Baccalaureate (STI2D)",
-        parcours_bac_loc: "Lycée Louis-le-Grand - Paris",
-        parcours_bac_date: "2022 - 2024",
-
-        exp_title: "Professional Experience",
-        exp_viva_role: "Volunteer",
-        exp_viva_company: "VivaTech 2025",
-        exp_viva_date: "June 2025",
-        exp_viva_desc: "Assisted in organising a major tech event (150,000+ participants), welcoming visitors and supporting on-site teams.",
-        exp_shop_role: "Store Employee",
-        exp_shop_company: "Azban Market - Paris",
-        exp_shop_date: "July 2022 - January 2023",
-        exp_shop_desc: "Stock management, shelf restocking and cashier transactions.",
-        exp_avocat_role: "Intern",
-        exp_avocat_company: "Law office Faycal Megherbi - Paris",
-        exp_avocat_date: "March 2020 - April 2020",
-        exp_avocat_desc: "Helped prepare legal files and supported attorneys with research.",
-
         // PROJECTS
         project_title: "Projects",
         p1_title: "Website Redesign — Armée du Salut (ongoing)",
@@ -202,6 +142,13 @@ const I18N = {
         p4_desc: "Console app in C tracking students & marking failure after 5 absences.",
         p5_title: "Board Game — Octo Verso",
         p5_desc: "Strategy word game written in C, with double-sided tiles and automatic game logic.",
+        p6_title: "Chess Game",
+        p6_desc: "Development of a complete chess game following official rules. Logic implementation, move validation, check/checkmate detection, and 2-player GUI.",
+        p7_title: "Network Services Setup",
+        p7_desc: "Design and simulation of a corporate network topology (VLANs, Routing). Deployment and security of essential services (DHCP, DNS, Web Server).",
+        p8_title: "Database Management",
+        p8_desc: "Business context analysis, data modeling (ERD) and normalization. Structure implementation and complex SQL queries for data exploitation.",
+
         tech_used: "Technologies used:",
 
         // CONTACT
@@ -296,4 +243,3 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
-
