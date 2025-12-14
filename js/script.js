@@ -28,7 +28,7 @@ const I18N = {
         // SKILLS
         skills_title: "Compétences",
         skills_tech_title: "Compétences techniques",
-        skills_lang_title: "<i class=\"fas fa-code\"></i> Languages", // Ajout des icônes dans la trad
+        skills_lang_title: "<i class=\"fas fa-code\"></i> Languages",
         skills_lang_desc: "Java, C/C++, Python, Javascript, VB.NET, SQL, HTML/CSS, PHP",
         skills_web_title: "<i class=\"fas fa-globe\"></i> Développement Web",
         skills_web_desc: "Responsive design, Bootstrap, accessibilité, optimisation visuelle, Requêtes HTTP (GET/POST), JSON, Appels API (bases)",
@@ -70,6 +70,10 @@ const I18N = {
         p8_title: "Exploitation d'une base de données",
         p8_desc: "Analyse métier, modélisation (MCD/MLD) et normalisation. Implémentation de la structure et rédaction de requêtes SQL complexes pour l'exploitation des données.",
 
+        // NOUVEAU PROJET (Utilisation de p9 pour ne pas écraser p5 Octo Verso)
+        p9_title: "Sensibilisation NIRD",
+        p9_desc: "Site web interactif conçu pour sensibiliser le grand public aux enjeux du numérique responsable. Un site éducatif réalisé en équipe du coucher du soleil jusqu'à l'aube lors du défi de la Nuit de l'Info 2025.",
+
         tech_used: "Technologies utilisées :",
 
         // CONTACT
@@ -92,7 +96,6 @@ const I18N = {
         nav_projects: "Projects",
         nav_contact: "Contact",
 
-        // Version EN mise à jour aussi pour être cohérente
         hero_title: "Tanim VEER <br> <span class=\"gradient-text\">Freelance Developer</span>",
         hero_subtitle: "2nd-year CS student at Université Paris Cité • Looking for an internship (8 to 16 weeks) from April 6, 2026.",
 
@@ -152,6 +155,10 @@ const I18N = {
         p7_desc: "Design and simulation of a corporate network topology (VLANs, Routing). Deployment and security of essential services (DHCP, DNS, Web Server).",
         p8_title: "Database Management",
         p8_desc: "Business context analysis, data modeling (ERD) and normalization. Structure implementation and complex SQL queries for data exploitation.",
+
+        // NOUVEAU PROJET EN
+        p9_title: "NIRD Awareness",
+        p9_desc: "Interactive website designed to raise awareness about responsible digital technologies. Educational site built as a team from sunset to sunrise during the Nuit de l'Info 2025 challenge.",
 
         tech_used: "Technologies used:",
 
