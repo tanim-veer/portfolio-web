@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1533"/><stop offset="1" stop-color="#1c3a9e"/>
+    </linearGradient>
+    <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#7da2ff"/>
+    </marker>
+  </defs>
+  <rect width="760" height="360" fill="url(#bg)"/>
+
+  <rect x="40" y="70" width="230" height="110" rx="14" fill="#ffffff" fill-opacity=".10" stroke="#ffffff" stroke-opacity=".3"/>
+  <text x="155" y="112" text-anchor="middle" fill="#fff" font-size="26" font-weight="700">Client Windows</text>
+  <text x="155" y="146" text-anchor="middle" fill="#a9c0ff" font-size="20">WireGuard</text>
+
+  <rect x="490" y="70" width="230" height="110" rx="14" fill="#ffffff" fill-opacity=".10" stroke="#ffffff" stroke-opacity=".3"/>
+  <text x="605" y="112" text-anchor="middle" fill="#fff" font-size="26" font-weight="700">Ubuntu (WSL)</text>
+  <text x="605" y="146" text-anchor="middle" fill="#a9c0ff" font-size="20">serveur wg0</text>
+
+  <line x1="278" y1="125" x2="482" y2="125" stroke="#7da2ff" stroke-width="4" stroke-dasharray="10 7" marker-start="url(#a)" marker-end="url(#a)"/>
+  <text x="380" y="106" text-anchor="middle" fill="#fff" font-size="20" font-weight="600">Tunnel chiffré</text>
+  <text x="380" y="158" text-anchor="middle" fill="#a9c0ff" font-size="18">UDP 51820</text>
+
+  <rect x="230" y="245" width="300" height="80" rx="14" fill="#7da2ff" fill-opacity=".22" stroke="#7da2ff"/>
+  <text x="380" y="280" text-anchor="middle" fill="#fff" font-size="24" font-weight="700">API FastAPI</text>
+  <text x="380" y="308" text-anchor="middle" fill="#cfdaff" font-size="18">clés + client.conf</text>
+
+  <path d="M300 243 C 230 215, 190 210, 165 188" fill="none" stroke="#7da2ff" stroke-width="3" marker-end="url(#a)"/>
+  <text x="120" y="228" text-anchor="middle" fill="#a9c0ff" font-size="17">.conf</text>
+</svg>

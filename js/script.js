@@ -56,6 +56,8 @@ const I18N = {
         p8_desc: "SQL avancé.",
         p9_title: "Sensibilisation NIRD",
         p9_desc: "Site Nuit de l'Info 2025.",
+        p10_title: "Infrastructure VPN WireGuard",
+        p10_desc: "VPN WireGuard Windows ↔ Ubuntu avec API FastAPI de génération de configurations.",
 
         tech_used: "Technologies utilisées :",
 
@@ -98,6 +100,8 @@ const I18N = {
 
         p9_title: "NIRD Awareness",
         p9_desc: "Educational website Nuit de l'Info 2025.",
+        p10_title: "WireGuard VPN Infrastructure",
+        p10_desc: "WireGuard VPN between Windows and Ubuntu, with a FastAPI service that generates client configurations.",
 
         tech_used: "Technologies used:",
 
