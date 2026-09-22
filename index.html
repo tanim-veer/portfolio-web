@@ -161,6 +161,24 @@
         <h2 data-i18n="project_title">Mes Projets</h2>
 
         <div class="projects-grid">
+            <a href="https://ou-faire-le-plein.onrender.com" class="project-card glass-card">
+                <div class="project-image">
+                    <img src="img/plein.svg" alt="Schéma : trajet départ-arrivée avec une station moins chère mise en avant malgré la distance">
+                    <div class="overlay"><i class="fas fa-gas-pump"></i></div>
+                </div>
+                <div class="project-content">
+                    <h3 data-i18n="p11_title">Où faire le plein</h3>
+                    <p class="project-description" data-i18n="p11_desc">
+                        Trouve la station-service la moins chère en tenant compte du détour réel pour s'y rendre (vrai calcul d'itinéraire via OSRM,
+                        pas une distance à vol d'oiseau) : une station moins chère au litre mais loin peut coûter plus cher une fois le carburant du trajet compté.
+                    </p>
+                    <p class="project-role" data-i18n="tech_used">Technologies utilisées :</p>
+                    <div class="tech-stack">
+                        <span class="technos">Python</span><span class="technos">FastAPI</span><span class="technos">OSRM</span><span class="technos">Leaflet</span>
+                    </div>
+                </div>
+            </a>
+
             <a href="https://github.com/tanim-veer/wireguard-vpn-infrastructure" class="project-card glass-card">
                 <div class="project-image">
                     <img src="img/wireguard.svg" alt="Schéma : client Windows, tunnel WireGuard chiffré, serveur Ubuntu et API FastAPI">

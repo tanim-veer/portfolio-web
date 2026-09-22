@@ -58,6 +58,8 @@ const I18N = {
         p9_desc: "Site Nuit de l'Info 2025.",
         p10_title: "Infrastructure VPN WireGuard",
         p10_desc: "VPN WireGuard Windows ↔ Ubuntu avec API FastAPI de génération de configurations.",
+        p11_title: "Où faire le plein",
+        p11_desc: "Trouve la station la moins chère en tenant compte du vrai détour routier (OSRM).",
 
         tech_used: "Technologies utilisées :",
 
@@ -102,6 +104,8 @@ const I18N = {
         p9_desc: "Educational website Nuit de l'Info 2025.",
         p10_title: "WireGuard VPN Infrastructure",
         p10_desc: "WireGuard VPN between Windows and Ubuntu, with a FastAPI service that generates client configurations.",
+        p11_title: "Where to fill up",
+        p11_desc: "Finds the cheapest gas station accounting for the real driving detour (OSRM).",
 
         tech_used: "Technologies used:",
 
