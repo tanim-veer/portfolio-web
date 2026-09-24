@@ -47,19 +47,19 @@ const I18N = {
         p4_title: "Gestion d'absences",
         p4_desc: "Application console C.",
         p5_title: "Jeu Octo Verso",
-        p5_desc: "Jeu stratégique en C.",
-        p6_title: "Jeu d'échec",
-        p6_desc: "Jeu complet en Java.",
+        p5_desc: "Jeu de lettres en console : former des mots sur un rail de tuiles double face.",
+        p6_title: "Moteur d'échecs UCI",
+        p6_desc: "Finale Roi + Tour en Java : protocole UCI, Clean Architecture, tests. Projet d'équipe.",
         p7_title: "Installation réseau",
         p7_desc: "Topologie VLAN & services.",
-        p8_title: "Exploitation base de données",
-        p8_desc: "SQL avancé.",
         p9_title: "Sensibilisation NIRD",
-        p9_desc: "Site Nuit de l'Info 2025.",
+        p9_desc: "Jeu narratif en ligne sur le numérique responsable, fait en équipe en une nuit (Nuit de l'Info 2025).",
         p10_title: "Infrastructure VPN WireGuard",
         p10_desc: "VPN WireGuard Windows ↔ Ubuntu avec API FastAPI de génération de configurations.",
         p11_title: "Où faire le plein",
         p11_desc: "Trouve la station la moins chère en tenant compte du vrai détour routier (OSRM).",
+        p12_title: "OpenMinds",
+        p12_desc: "App mobile de formation des bénévoles (quiz, badges, sessions), en équipe de 6 : Flutter et tests.",
 
         tech_used: "Technologies utilisées :",
 
@@ -100,12 +100,16 @@ const I18N = {
 
         project_title: "Projects",
 
+        p6_title: "UCI chess engine",
+        p6_desc: "King + Rook endgame in Java: UCI protocol, Clean Architecture, tests. Team project.",
         p9_title: "NIRD Awareness",
-        p9_desc: "Educational website Nuit de l'Info 2025.",
+        p9_desc: "Online story game about responsible tech, built as a team in one night (Nuit de l'Info 2025).",
         p10_title: "WireGuard VPN Infrastructure",
         p10_desc: "WireGuard VPN between Windows and Ubuntu, with a FastAPI service that generates client configurations.",
         p11_title: "Where to fill up",
         p11_desc: "Finds the cheapest gas station accounting for the real driving detour (OSRM).",
+        p12_title: "OpenMinds",
+        p12_desc: "Mobile app for volunteer training (quizzes, badges, sessions), team of 6: Flutter and tests.",
 
         tech_used: "Technologies used:",
 
