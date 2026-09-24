@@ -179,7 +179,7 @@
             </div>
             <div class="skill-group glass-card reveal">
                 <h3><i class="fas fa-database" aria-hidden="true"></i> <span data-i18n="sk_data_t">Données</span></h3>
-                <ul class="chips"><li>MySQL</li><li>PostgreSQL</li><li>PL/SQL</li><li>Firestore</li><li data-i18n="sk_model">Modélisation MCD / MLD</li><li data-i18n="sk_opendata">API de données ouvertes</li></ul>
+                <ul class="chips"><li>MySQL</li><li>PostgreSQL</li><li>SQLite</li><li>PL/SQL</li><li>Firestore</li><li>NumPy</li><li>scikit-learn</li><li data-i18n="sk_anomaly">Détection d'anomalies</li><li data-i18n="sk_model">Modélisation MCD / MLD</li><li data-i18n="sk_opendata">API de données ouvertes</li></ul>
             </div>
             <div class="skill-group glass-card reveal">
                 <h3><i class="fas fa-server" aria-hidden="true"></i> <span data-i18n="sk_back_t">Back-end & API</span></h3>
@@ -211,7 +211,7 @@
             <button type="button" class="filter" data-filter="python" aria-pressed="false">Python</button>
             <button type="button" class="filter" data-filter="web" aria-pressed="false">Web</button>
             <button type="button" class="filter" data-filter="mobile" aria-pressed="false">Mobile</button>
-            <button type="button" class="filter" data-filter="reseau" aria-pressed="false" data-i18n="f_net">Réseau</button>
+            <button type="button" class="filter" data-filter="reseau" aria-pressed="false" data-i18n="f_net">Système & réseau</button>
             <button type="button" class="filter" data-filter="logiciel" aria-pressed="false" data-i18n="f_soft">Logiciel & algo</button>
         </div>
 
@@ -225,6 +225,17 @@
                     <h3 data-i18n="p11_title">Où faire le plein</h3>
                     <p class="project-description" data-i18n="p11_desc">Trouve la station la moins chère en tenant compte du vrai détour routier (itinéraires OSRM), à partir des prix officiels en temps réel.</p>
                     <div class="tech-stack"><span class="technos">Python</span><span class="technos">FastAPI</span><span class="technos">OSRM</span><span class="technos">Leaflet</span></div>
+                </div>
+            </a>
+
+            <a href="https://github.com/tanim-veer/vigie" class="project-card glass-card" data-cat="python reseau" target="_blank" rel="noopener">
+                <div class="project-image">
+                    <img src="img/vigie.png" alt="Graphique du processeur dans Vigie : un pic de charge marqué comme anomalie en rouge" loading="lazy">
+                </div>
+                <div class="project-content">
+                    <h3 data-i18n="p13_title">Vigie — surveillance système</h3>
+                    <p class="project-description" data-i18n="p13_desc">Surveille une machine Linux en lisant directement /proc et détecte les anomalies en temps réel (z-score et Isolation Forest), avec un tableau de bord web.</p>
+                    <div class="tech-stack"><span class="technos">Python</span><span class="technos">FastAPI</span><span class="technos">scikit-learn</span><span class="technos">Linux</span></div>
                 </div>
             </a>
 
