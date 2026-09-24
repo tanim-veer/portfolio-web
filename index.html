@@ -179,11 +179,11 @@
             </div>
             <div class="skill-group glass-card reveal">
                 <h3><i class="fas fa-database" aria-hidden="true"></i> <span data-i18n="sk_data_t">Données</span></h3>
-                <ul class="chips"><li>MySQL</li><li>PostgreSQL</li><li>SQLite</li><li>PL/SQL</li><li>Firestore</li><li>NumPy</li><li>scikit-learn</li><li data-i18n="sk_anomaly">Détection d'anomalies</li><li data-i18n="sk_model">Modélisation MCD / MLD</li><li data-i18n="sk_opendata">API de données ouvertes</li></ul>
+                <ul class="chips"><li>PostgreSQL</li><li>MySQL</li><li>SQLite</li><li data-i18n="sk_sql">SQL analytique (fenêtres, CTE)</li><li>PL/pgSQL</li><li>PL/SQL</li><li>ETL</li><li>Firestore</li><li>NumPy</li><li>scikit-learn</li><li data-i18n="sk_anomaly">Détection d'anomalies</li><li data-i18n="sk_model">Modélisation MCD / MLD</li><li data-i18n="sk_opendata">API de données ouvertes</li></ul>
             </div>
             <div class="skill-group glass-card reveal">
                 <h3><i class="fas fa-server" aria-hidden="true"></i> <span data-i18n="sk_back_t">Back-end & API</span></h3>
-                <ul class="chips"><li>FastAPI</li><li data-i18n="sk_rest">API REST</li><li>Firebase</li><li>PHP</li><li data-i18n="sk_deploy">Déploiement (Render, Netlify, GitHub Pages)</li></ul>
+                <ul class="chips"><li>FastAPI</li><li data-i18n="sk_rest">API REST</li><li>Firebase</li><li>PHP</li><li>Docker</li><li data-i18n="sk_deploy">Déploiement (Render, Netlify, GitHub Pages)</li></ul>
             </div>
             <div class="skill-group glass-card reveal">
                 <h3><i class="fas fa-mobile-alt" aria-hidden="true"></i> <span data-i18n="sk_front_t">Web & mobile</span></h3>
@@ -208,6 +208,7 @@
 
         <div class="filters" role="group" aria-label="Filtrer les projets">
             <button type="button" class="filter active" data-filter="all" aria-pressed="true" data-i18n="f_all">Tous</button>
+            <button type="button" class="filter" data-filter="data" aria-pressed="false" data-i18n="f_data">Données</button>
             <button type="button" class="filter" data-filter="python" aria-pressed="false">Python</button>
             <button type="button" class="filter" data-filter="web" aria-pressed="false">Web</button>
             <button type="button" class="filter" data-filter="mobile" aria-pressed="false">Mobile</button>
@@ -228,7 +229,18 @@
                 </div>
             </a>
 
-            <a href="https://github.com/tanim-veer/vigie" class="project-card glass-card" data-cat="python reseau" target="_blank" rel="noopener">
+            <a href="https://github.com/tanim-veer/observatoire-carburants" class="project-card glass-card" data-cat="data python" target="_blank" rel="noopener">
+                <div class="project-image">
+                    <img src="img/observatoire.png" alt="Graphique du prix moyen national du gazole, de l'E10, du SP95 et du SP98 mois par mois en 2025" loading="lazy">
+                </div>
+                <div class="project-content">
+                    <h3 data-i18n="p14_title">Observatoire des carburants</h3>
+                    <p class="project-description" data-i18n="p14_desc">Base PostgreSQL de 5,3 millions de prix officiels : modélisation, chargement ETL, contrôle qualité, analyses SQL avancées et index mesurés.</p>
+                    <div class="tech-stack"><span class="technos">PostgreSQL</span><span class="technos">SQL</span><span class="technos">Docker</span><span class="technos">Python</span></div>
+                </div>
+            </a>
+
+            <a href="https://github.com/tanim-veer/vigie" class="project-card glass-card" data-cat="data python reseau" target="_blank" rel="noopener">
                 <div class="project-image">
                     <img src="img/vigie.png" alt="Graphique du processeur dans Vigie : un pic de charge marqué comme anomalie en rouge" loading="lazy">
                 </div>
