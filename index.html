@@ -1,66 +1,175 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title data-i18n="site_title">Tanim VEER - Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="site_title">Tanim VEER — Étudiant en informatique, Data & IA</title>
 
-    <meta name="description" content="Portfolio de Tanim Veer, étudiant en informatique. Projets, compétences et contact." data-i18n="meta_description">
-    <meta name="keywords" content="Tanim Veer, Veer Tanim, Tanim, Veer, portfolio informatique, développeur, projets informatique" data-i18n="meta_keywords">
-    <meta name="language" content="fr">
+    <meta name="description" content="Portfolio de Tanim Veer, étudiant en BUT3 Informatique (parcours Data & IA) à l'Université Paris Cité. Projets, parcours et contact. Recherche un stage dès février 2027." data-i18n="meta_description">
     <meta name="author" content="Tanim Veer">
-    <meta name="copyright" content="Tanim Veer">
+    <link rel="canonical" href="https://tanim-veer.fr/">
+    <meta name="theme-color" content="#0a0a0a">
 
-    <meta property="og:title" content="Tanim Veer - Portfolio Informatique" data-i18n="og_title">
-    <meta property="og:description" content="Découvrez les projets et compétences de Tanim Veer, étudiant en informatique." data-i18n="og_desc">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://tanim-veer.fr">
-    <meta property="og:image" content="https://tanim-veer.fr/image-presentation.jpg">
-
+    <meta property="og:url" content="https://tanim-veer.fr/">
+    <meta property="og:title" content="Tanim Veer — Portfolio" data-i18n="og_title">
+    <meta property="og:description" content="Étudiant en BUT3 Informatique, parcours Data & IA. Projets en Python, Java, C, Flutter. Recherche un stage dès février 2027." data-i18n="og_desc">
+    <meta property="og:image" content="https://tanim-veer.fr/img/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Tanim Veer - Portfolio Informatique" data-i18n="tw_title">
-    <meta name="twitter:description" content="Découvrez les projets et compétences de Tanim Veer, étudiant en informatique." data-i18n="tw_desc">
-    <meta name="twitter:image" content="https://tanim-veer.fr/image-presentation.jpg">
+    <meta name="twitter:image" content="https://tanim-veer.fr/img/og-image.png">
 
-    <link rel="stylesheet" href="fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Tanim Veer",
+        "url": "https://tanim-veer.fr",
+        "jobTitle": "Étudiant en BUT Informatique, parcours Data & IA",
+        "alumniOf": "Université Paris Cité",
+        "sameAs": ["https://github.com/tanim-veer", "https://www.linkedin.com/in/tanim-veer-06a89222b/"]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
 
-<div class="background-glow"></div>
+<a class="skip-link" href="#main" data-i18n="skip">Aller au contenu</a>
+<div class="background-glow" aria-hidden="true"></div>
 
-<nav class="navbar">
+<nav class="navbar" aria-label="Navigation principale">
     <div class="nav-content">
-        <a href="#" class="logo" data-i18n="logo_name">Tanim VEER</a>
+        <a href="#home" class="logo">Tanim VEER</a>
 
-        <div class="nav-links">
+        <div class="nav-links" id="navLinks">
+            <a href="#about" data-i18n="nav_about">À propos</a>
+            <a href="#journey" data-i18n="nav_journey">Parcours</a>
             <a href="#skills" data-i18n="nav_skills">Compétences</a>
             <a href="#projects" data-i18n="nav_projects">Projets</a>
             <a href="#contact" data-i18n="nav_contact">Contact</a>
         </div>
 
         <div class="controls">
-            <button id="langToggle">EN</button>
-            <button id="themeToggle">
-                <i class="fa-solid fa-moon"></i>
-            </button>
+            <button id="langToggle" type="button" aria-label="Switch to English">EN</button>
+            <button id="themeToggle" type="button" aria-label="Changer de thème"><i class="fa-solid fa-moon"></i></button>
+            <button id="menuToggle" class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navLinks"><i class="fa-solid fa-bars"></i></button>
         </div>
     </div>
 </nav>
 
+<main id="main">
+
 <section class="hero" id="home">
     <div class="container hero-container">
-        <h1 data-i18n="hero_title">Tanim VEER <br> <span class="gradient-text">Développeur Freelance</span></h1>
+        <p class="status-pill"><span class="dot" aria-hidden="true"></span><span data-i18n="hero_status">Disponible en stage dès février 2027</span></p>
+        <h1>Tanim VEER <br><span class="gradient-text" data-i18n="hero_title">Étudiant en informatique · Data & IA</span></h1>
 
         <p data-i18n="hero_subtitle">
-            Étudiant en BUT2 Informatique à l'Université Paris Cité • Recherche un stage de 8 semaines à 12 semaines à partir du 6 avril 2026.
+            En BUT3 Informatique à l'Université Paris Cité, je recherche un stage de 3 mois ou plus à partir de février 2027, en priorité en data et en intelligence artificielle.
         </p>
 
         <div class="cta-buttons">
-            <a href="#contact" class="cta-button primary" data-i18n="btn_contact">Me contacter</a>
-            <a href="Tanim-VEER-CV-Informatique.pdf" class="cta-button secondary" data-i18n="btn_cv">Voir mon CV</a>
+            <a href="#projects" class="cta-button primary" data-i18n="btn_projects">Voir mes projets <i class="fas fa-arrow-down"></i></a>
+            <a href="#contact" class="cta-button secondary" data-i18n="btn_contact">Me contacter</a>
+            <a href="Tanim-VEER-CV-Informatique.pdf" class="cta-button secondary" target="_blank" rel="noopener" data-i18n="btn_cv"><i class="fas fa-file-pdf"></i> CV</a>
+        </div>
+
+        <ul class="hero-links" aria-label="Profils">
+            <li><a href="https://github.com/tanim-veer" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/tanim-veer-06a89222b/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="mailto:veertanim@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="container">
+        <h2 data-i18n="about_title">À propos</h2>
+        <div class="about-grid">
+            <div class="about-text reveal">
+                <p data-i18n="about_p1">
+                    Je suis en troisième année de BUT Informatique à l'Université Paris Cité (IUT Paris Rives de Seine), dans le parcours <strong>Data & IA</strong>.
+                    Ce qui me plaît, c'est de construire des outils qui servent vraiment : une application qui trouve la station-service la moins chère sur un trajet,
+                    un VPN monté de bout en bout, un moteur d'échecs qui dialogue avec une vraie interface.
+                </p>
+                <p data-i18n="about_p2">
+                    En parallèle des cours, je réalise des sites web en freelance depuis 2024, et je m'implique dans des événements comme la Nuit de l'Info ou VivaTech.
+                    J'aime autant le travail en équipe que comprendre un problème jusqu'au bout.
+                </p>
+            </div>
+            <ul class="about-facts reveal">
+                <li class="glass-card">
+                    <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                    <div><h3 data-i18n="fact_school_t">Formation</h3><p data-i18n="fact_school">BUT3 Informatique, parcours Data & IA</p></div>
+                </li>
+                <li class="glass-card">
+                    <i class="fas fa-calendar-check" aria-hidden="true"></i>
+                    <div><h3 data-i18n="fact_avail_t">Disponibilité</h3><p data-i18n="fact_avail">Stage de 3 mois ou plus, dès février 2027</p></div>
+                </li>
+                <li class="glass-card">
+                    <i class="fas fa-language" aria-hidden="true"></i>
+                    <div><h3 data-i18n="fact_lang_t">Langues</h3><p data-i18n="fact_lang">Français et bengali (courant), anglais (B2), espagnol (B1)</p></div>
+                </li>
+                <li class="glass-card">
+                    <i class="fas fa-dumbbell" aria-hidden="true"></i>
+                    <div><h3 data-i18n="fact_hobby_t">Centres d'intérêt</h3><p data-i18n="fact_hobby">Musculation, voyages, vie associative</p></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="journey" id="journey">
+    <div class="container">
+        <h2 data-i18n="journey_title">Parcours</h2>
+        <div class="journey-grid">
+            <div class="reveal">
+                <h3 class="journey-heading"><i class="fas fa-briefcase" aria-hidden="true"></i> <span data-i18n="journey_exp">Expériences</span></h3>
+                <ol class="timeline">
+                    <li>
+                        <span class="when" data-i18n="exp1_when">Nov. 2024 — aujourd'hui</span>
+                        <h4 data-i18n="exp1_title">Développeur web freelance</h4>
+                        <p data-i18n="exp1_desc">Conception et mise en ligne de deux sites pour des clients locaux, dont un site e-commerce.</p>
+                    </li>
+                    <li>
+                        <span class="when" data-i18n="exp2_when">Déc. 2025</span>
+                        <h4 data-i18n="exp2_title">Nuit de l'Info — hackathon</h4>
+                        <p data-i18n="exp2_desc">Application web développée en équipe en une nuit sur le numérique responsable, avec la coordination Git de l'équipe.</p>
+                    </li>
+                    <li>
+                        <span class="when" data-i18n="exp3_when">Juin 2025</span>
+                        <h4 data-i18n="exp3_title">Bénévole à VivaTech</h4>
+                        <p data-i18n="exp3_desc">Accueil et orientation de plus de 500 visiteurs internationaux par jour, en coordination avec une équipe de bénévoles.</p>
+                    </li>
+                    <li>
+                        <span class="when" data-i18n="exp4_when">Mai 2024</span>
+                        <h4 data-i18n="exp4_title">Olympiades de SI — finale académique de Paris</h4>
+                        <p data-i18n="exp4_desc">Robot autonome : programmation en C++ et modélisation 3D. Projet sélectionné pour la finale académique et présenté devant un jury.</p>
+                    </li>
+                </ol>
+            </div>
+            <div class="reveal">
+                <h3 class="journey-heading"><i class="fas fa-graduation-cap" aria-hidden="true"></i> <span data-i18n="journey_edu">Formation</span></h3>
+                <ol class="timeline">
+                    <li>
+                        <span class="when" data-i18n="edu1_when">2024 — aujourd'hui</span>
+                        <h4 data-i18n="edu1_title">BUT Informatique</h4>
+                        <p data-i18n="edu1_desc">Université Paris Cité, IUT Paris Rives de Seine. Parcours Data & IA en troisième année.</p>
+                    </li>
+                    <li>
+                        <span class="when">2022 — 2024</span>
+                        <h4 data-i18n="edu2_title">Baccalauréat STI2D</h4>
+                        <p data-i18n="edu2_desc">Lycée Louis-le-Grand, Paris.</p>
+                    </li>
+                </ol>
+            </div>
         </div>
     </div>
 </section>
@@ -69,290 +178,176 @@
     <div class="container">
         <h2 data-i18n="skills_title">Compétences</h2>
         <div class="skills-grid">
-
-            <div class="skill-category glass-card">
-                <h3 data-i18n="skills_tech_title">Compétences techniques</h3>
-                <div class="skill-items">
-
-                    <div class="skill-group">
-                        <h4 data-i18n="skills_lang_title"><i class="fas fa-code"></i> Languages</h4>
-                        <p class="description" data-i18n="skills_lang_desc">Java, C/C++, Python, Javascript, VB.NET, SQL, HTML/CSS, PHP</p>
-                    </div>
-
-                    <div class="skill-group">
-                        <h4 data-i18n="skills_web_title"><i class="fas fa-globe"></i> Développement Web</h4>
-                        <p class="description" data-i18n="skills_web_desc">
-                            Responsive design, Bootstrap, accessibilité, optimisation visuelle, Requêtes HTTP (GET/POST), JSON, Appels API (bases)
-                        </p>
-                    </div>
-
-                    <div class="skill-group">
-                        <h4 data-i18n="skills_db_title"><i class="fas fa-database"></i> Bases de données</h4>
-                        <p class="description" data-i18n="skills_db_desc">MySQL, PostgreSQL, PL/SQL, requêtes CRUD et jointures</p>
-                    </div>
-
-                    <div class="skill-group">
-                        <h4 data-i18n="skills_sys_title"><i class="fas fa-server"></i> Système & Réseaux</h4>
-                        <p class="description" data-i18n="skills_sys_desc">
-                            Linux (permissions, fichiers, commandes shell), Protocoles réseau (TCP/UDP, HTTP, DNS — notions), Assembleur x86 (notions)
-                        </p>
-                    </div>
-
-                    <div class="skill-group">
-                        <h4 data-i18n="skills_design_title"><i class="fas fa-cogs"></i> Conception</h4>
-                        <p class="description" data-i18n="skills_design_desc">
-                            POO, Modélisation UML, Interfaces graphiques, Structures de données
-                        </p>
-                    </div>
-
-                    <div class="skill-group">
-                        <h4 data-i18n="skills_meth_title"><i class="fas fa-shield-alt"></i> Méthodes</h4>
-                        <p class="description" data-i18n="skills_meth_desc">
-                            Travail en équipe, Git workflow, Documentation de projets, Méthodologie Agile (Scrum), Maquettage, principe SOLID
-                        </p>
-                    </div>
-
-                </div>
+            <div class="skill-group glass-card reveal">
+                <h3><i class="fas fa-code" aria-hidden="true"></i> <span data-i18n="sk_lang_t">Langages</span></h3>
+                <ul class="chips"><li>Python</li><li>Java</li><li>C</li><li>JavaScript</li><li>SQL</li><li>Dart</li><li>PHP</li><li>HTML / CSS</li><li>VB.NET</li></ul>
             </div>
-
-            <div class="skill-category glass-card">
-                <h3 data-i18n="skills_tools_title">Outils maîtrisés</h3>
-                <div class="skill-items tools-grid">
-
-                    <div class="tool-item">
-                        <h4><i class="fas fa-laptop-code"></i> IDE & Éditeurs</h4>
-                        <p>VS Code, IntelliJ IDEA, Eclipse, Sublime Text</p>
-                    </div>
-
-                    <div class="tool-item">
-                        <h4><i class="fas fa-server"></i> Système & Virtualisation</h4>
-                        <p>Linux (Ubuntu/Debian), VirtualBox, VMWare</p>
-                    </div>
-
-                    <div class="tool-item">
-                        <h4><i class="fas fa-database"></i> Clients BDD & API</h4>
-                        <p>Looping (MCD)</p>
-                    </div>
-
-                    <div class="tool-item">
-                        <h4><i class="fas fa-users"></i> Gestion & Collab.</h4>
-                        <p>Jira (Méthode Agile), Trello, Notion, Microsoft Teams, Discord, Suite Office</p>
-                    </div>
-
-                    <div class="tool-item">
-                        <h4><i class="fas fa-pen-nib"></i> UI/UX Design</h4>
-                        <p>Figma, Canva, Maquettage papier</p>
-                    </div>
-
-                    <div class="tool-item">
-                        <h4><i class="fas fa-code-branch"></i> DevOps & Qualité</h4>
-                        <p>Git, GitHub, GitLab, JUnit</p>
-                    </div>
-
-                </div>
+            <div class="skill-group glass-card reveal">
+                <h3><i class="fas fa-database" aria-hidden="true"></i> <span data-i18n="sk_data_t">Données</span></h3>
+                <ul class="chips"><li>MySQL</li><li>PostgreSQL</li><li>PL/SQL</li><li>Firestore</li><li data-i18n="sk_model">Modélisation MCD / MLD</li><li data-i18n="sk_opendata">API de données ouvertes</li></ul>
             </div>
-
+            <div class="skill-group glass-card reveal">
+                <h3><i class="fas fa-server" aria-hidden="true"></i> <span data-i18n="sk_back_t">Back-end & API</span></h3>
+                <ul class="chips"><li>FastAPI</li><li data-i18n="sk_rest">API REST</li><li>Firebase</li><li>PHP</li><li data-i18n="sk_deploy">Déploiement (Render, Netlify, GitHub Pages)</li></ul>
+            </div>
+            <div class="skill-group glass-card reveal">
+                <h3><i class="fas fa-mobile-alt" aria-hidden="true"></i> <span data-i18n="sk_front_t">Web & mobile</span></h3>
+                <ul class="chips"><li>Flutter</li><li>HTML / CSS / JS</li><li>Leaflet</li><li data-i18n="sk_responsive">Responsive design</li><li data-i18n="sk_a11y">Accessibilité</li><li>PWA</li></ul>
+            </div>
+            <div class="skill-group glass-card reveal">
+                <h3><i class="fas fa-network-wired" aria-hidden="true"></i> <span data-i18n="sk_sys_t">Système & réseau</span></h3>
+                <ul class="chips"><li>Linux</li><li>WireGuard</li><li>VLAN</li><li>DHCP / DNS</li><li>TCP / UDP</li><li>Cisco Packet Tracer</li></ul>
+            </div>
+            <div class="skill-group glass-card reveal">
+                <h3><i class="fas fa-shield-alt" aria-hidden="true"></i> <span data-i18n="sk_qual_t">Conception & qualité</span></h3>
+                <ul class="chips"><li data-i18n="sk_oop">POO</li><li>UML</li><li>Clean Architecture</li><li>SOLID</li><li data-i18n="sk_tests">Tests unitaires</li><li>Git flow</li><li>Agile / Scrum</li></ul>
+            </div>
         </div>
     </div>
 </section>
 
 <section class="projects" id="projects">
     <div class="container">
-        <h2 data-i18n="project_title">Mes Projets</h2>
+        <h2 data-i18n="project_title">Projets</h2>
+        <p class="section-intro" data-i18n="project_intro">Projets personnels, scolaires et d'équipe. Cliquez sur un projet pour voir le code ou la démo.</p>
+
+        <div class="filters" role="group" aria-label="Filtrer les projets">
+            <button type="button" class="filter active" data-filter="all" aria-pressed="true" data-i18n="f_all">Tous</button>
+            <button type="button" class="filter" data-filter="python" aria-pressed="false">Python</button>
+            <button type="button" class="filter" data-filter="web" aria-pressed="false">Web</button>
+            <button type="button" class="filter" data-filter="mobile" aria-pressed="false">Mobile</button>
+            <button type="button" class="filter" data-filter="reseau" aria-pressed="false" data-i18n="f_net">Réseau</button>
+            <button type="button" class="filter" data-filter="logiciel" aria-pressed="false" data-i18n="f_soft">Logiciel & algo</button>
+        </div>
 
         <div class="projects-grid">
-            <a href="https://ou-faire-le-plein.onrender.com" class="project-card glass-card">
+            <a href="https://ou-faire-le-plein.onrender.com" class="project-card glass-card" data-cat="python web" target="_blank" rel="noopener">
                 <div class="project-image">
-                    <img src="img/plein.svg" alt="Schéma : trajet départ-arrivée avec une station moins chère mise en avant malgré la distance">
-                    <div class="overlay"><i class="fas fa-gas-pump"></i></div>
+                    <img src="img/plein.svg" alt="Schéma : trajet départ-arrivée avec une station moins chère mise en avant malgré la distance" loading="lazy">
+                    <div class="badges"><span class="badge demo" data-i18n="b_demo">Démo en ligne</span></div>
                 </div>
                 <div class="project-content">
                     <h3 data-i18n="p11_title">Où faire le plein</h3>
-                    <p class="project-description" data-i18n="p11_desc">
-                        Trouve la station-service la moins chère en tenant compte du détour réel pour s'y rendre (vrai calcul d'itinéraire via OSRM,
-                        pas une distance à vol d'oiseau) : une station moins chère au litre mais loin peut coûter plus cher une fois le carburant du trajet compté.
-                    </p>
-                    <p class="project-role" data-i18n="tech_used">Technologies utilisées :</p>
-                    <div class="tech-stack">
-                        <span class="technos">Python</span><span class="technos">FastAPI</span><span class="technos">OSRM</span><span class="technos">Leaflet</span>
-                    </div>
+                    <p class="project-description" data-i18n="p11_desc">Trouve la station la moins chère en tenant compte du vrai détour routier (itinéraires OSRM), à partir des prix officiels en temps réel.</p>
+                    <div class="tech-stack"><span class="technos">Python</span><span class="technos">FastAPI</span><span class="technos">OSRM</span><span class="technos">Leaflet</span></div>
                 </div>
             </a>
 
-            <a href="https://github.com/tanim-veer/wireguard-vpn-infrastructure" class="project-card glass-card">
+            <a href="https://github.com/tanim-veer/wireguard-vpn-infrastructure" class="project-card glass-card" data-cat="python reseau" target="_blank" rel="noopener">
                 <div class="project-image">
-                    <img src="img/wireguard.svg" alt="Schéma : client Windows, tunnel WireGuard chiffré, serveur Ubuntu et API FastAPI">
-                    <div class="overlay"><i class="fas fa-shield-alt"></i></div>
+                    <img src="img/wireguard.svg" alt="Schéma : client Windows, tunnel WireGuard chiffré, serveur Ubuntu et API FastAPI" loading="lazy">
                 </div>
                 <div class="project-content">
                     <h3 data-i18n="p10_title">Infrastructure VPN WireGuard</h3>
-                    <p class="project-description" data-i18n="p10_desc">
-                        Mise en place d'un VPN WireGuard entre un client Windows et un serveur Ubuntu (WSL), avec une API FastAPI qui génère les clés
-                        et les fichiers de configuration client. Tunnel chiffré validé par un handshake réussi.
-                    </p>
-                    <p class="project-role" data-i18n="tech_used">Technologies utilisées :</p>
-                    <div class="tech-stack">
-                        <span class="technos">Python</span><span class="technos">FastAPI</span><span class="technos">WireGuard</span><span class="technos">Linux</span>
-                    </div>
+                    <p class="project-description" data-i18n="p10_desc">Tunnel VPN chiffré entre Windows et Ubuntu, avec une API FastAPI qui génère les clés et les configurations clients.</p>
+                    <div class="tech-stack"><span class="technos">Python</span><span class="technos">FastAPI</span><span class="technos">WireGuard</span><span class="technos">Linux</span></div>
                 </div>
             </a>
 
-            <a href="https://github.com/tanim-veer/application_openminds" class="project-card glass-card">
+            <a href="https://github.com/tanim-veer/java_jeu_d-echec" class="project-card glass-card" data-cat="logiciel" target="_blank" rel="noopener">
                 <div class="project-image">
-                    <img src="img/openminds.svg" alt="Schéma : application mobile avec les espaces bénévole, formateur et admin reliés à Firebase">
-                    <div class="overlay"><i class="fas fa-mobile-alt"></i></div>
-                </div>
-                <div class="project-content">
-                    <h3 data-i18n="p12_title">OpenMinds</h3>
-                    <p class="project-description" data-i18n="p12_desc">
-                        Application mobile de formation des bénévoles pour France Bénévolat, en équipe de 6. Mon rôle : tableau de bord bénévole, Firestore temps réel, tests.
-                    </p>
-                    <p class="project-role" data-i18n="tech_used">Technologies utilisées :</p>
-                    <div class="tech-stack">
-                        <span class="technos">Flutter</span><span class="technos">Dart</span><span class="technos">Firebase</span>
-                    </div>
-                </div>
-            </a>
-
-            <a href="https://tanim-veer.alwaysdata.net" class="project-card glass-card">
-                <div class="project-image">
-                    <img src="img/armee.png" alt="">
-                    <div class="overlay"><i class="fas fa-external-link-alt"></i></div>
-                </div>
-                <div class="project-content">
-                    <h3 data-i18n="p1_title">Refonte du site de l'Armée du Salut</h3>
-                    <p class="project-description" data-i18n="p1_desc">
-                        Refonte moderne de plusieurs pages du site dans le cadre d'un projet scolaire : amélioration de l’ergonomie, correction des incohérences graphiques,
-                        optimisation visuelle et ajout d’une navigation plus intuitive, et du back-office (partie admin).
-                    </p>
-                    <p class="project-role" data-i18n="tech_used">Technologies utilisées :</p>
-                    <div class="tech-stack">
-                        <span class="technos">HTML</span><span class="technos">CSS</span><span class="technos">JavaScript</span><span class="technos">PHP</span><span class="technos">MySQL</span>
-                    </div>
-                </div>
-            </a>
-
-            <a href="https://github.com/tanim-veer/java-graphes-labyrinthe" class="project-card glass-card">
-                <div class="project-image">
-                    <img src="img/dijkstra.png" alt="">
-                    <div class="overlay"><i class="fas fa-code-branch"></i></div>
-                </div>
-                <div class="project-content">
-                    <h3 data-i18n="p2_title">Algorithme de Dijkstra</h3>
-                    <p class="project-description" data-i18n="p2_desc">
-                        Algorithme de recherche du plus court chemin dans un graphe pondéré, utilisé pour trouver le trajet optimal
-                        entre deux nœuds, avec visualisation dans un labyrinthe.
-                    </p>
-                    <p class="project-role" data-i18n="tech_used">Technologies utilisées :</p>
-                    <div class="tech-stack">
-                        <span class="technos">Java</span>
-                    </div>
-                </div>
-            </a>
-
-            <a href="https://github.com/tanim-veer/memory-game-vbnet" class="project-card glass-card">
-                <div class="project-image">
-                    <img src="img/memorygame.jpeg" alt="">
-                    <div class="overlay"><i class="fas fa-gamepad"></i></div>
-                </div>
-                <div class="project-content">
-                    <h3 data-i18n="p3_title">Jeu de Memory</h3>
-                    <p class="project-description" data-i18n="p3_desc">
-                        Jeu de mémoire pour 2 joueurs, réalisé en VB.NET avec gestion du plateau, comparaison des cartes, affichage du score et fin de partie automatique.
-                    </p>
-                    <p class="project-role" data-i18n="tech_used">Technologies utilisées :</p>
-                    <div class="tech-stack">
-                        <span class="technos">VB.NET</span>
-                    </div>
-                </div>
-            </a>
-
-            <a href="https://github.com/tanim-veer/java_jeu_d-echec" class="project-card glass-card">
-                <div class="project-image">
-                    <img src="img/echecs-uci.svg" alt="Schéma : finale Roi + Tour contre Roi et échange de commandes UCI avec le moteur">
-                    <div class="overlay"><i class="fas fa-chess"></i></div>
+                    <img src="img/echecs-uci.svg" alt="Schéma : finale Roi + Tour contre Roi et échange de commandes UCI avec le moteur" loading="lazy">
+                    <div class="badges"><span class="badge team" data-i18n="b_team">Équipe</span></div>
                 </div>
                 <div class="project-content">
                     <h3 data-i18n="p6_title">Moteur d'échecs UCI</h3>
-                    <p class="project-description" data-i18n="p6_desc">
-                        Moteur d'échecs pour la finale Roi + Tour contre Roi, compatible avec les interfaces UCI (ChessX) : coups légaux, Clean Architecture, tests. Projet d'équipe.
-                    </p>
-                    <p class="project-role" data-i18n="tech_used">Technologies utilisées :</p>
-                    <div class="tech-stack">
-                        <span class="technos">Java</span>
-                    </div>
+                    <p class="project-description" data-i18n="p6_desc">Moteur pour la finale Roi + Tour contre Roi, compatible avec les interfaces UCI comme ChessX. Clean Architecture et tests.</p>
+                    <div class="tech-stack"><span class="technos">Java</span><span class="technos">UCI</span><span class="technos">SOLID</span></div>
                 </div>
             </a>
 
-            <a href="" class="project-card glass-card">
+            <a href="https://github.com/tanim-veer/application_openminds" class="project-card glass-card" data-cat="mobile" target="_blank" rel="noopener">
                 <div class="project-image">
-                    <img src="img/reseau.png" alt="Topologie Réseau">
-                    <div class="overlay"><i class="fas fa-network-wired"></i></div>
+                    <img src="img/openminds.svg" alt="Schéma : application mobile avec les espaces bénévole, formateur et admin reliés à Firebase" loading="lazy">
+                    <div class="badges"><span class="badge team" data-i18n="b_team">Équipe</span></div>
                 </div>
                 <div class="project-content">
-                    <h3 data-i18n="p7_title">Installation de services réseau</h3>
-                    <p class="project-description" data-i18n="p7_desc">
-                        Conception et simulation d’une topologie réseau d'entreprise complète.
-                        Configuration du routage, des commutateurs et segmentation par VLANs.
-                        Déploiement et sécurisation des services essentiels (DHCP, DNS, Serveur Web).
-                    </p>
-                    <p class="project-role" data-i18n="tech_used">Technologies utilisées :</p>
-                    <div class="tech-stack">
-                        <span class="technos">Cisco Packet Tracer</span>
-                    </div>
+                    <h3 data-i18n="p12_title">OpenMinds</h3>
+                    <p class="project-description" data-i18n="p12_desc">Application mobile de formation des bénévoles pour France Bénévolat, en équipe de 6. Mon rôle : tableau de bord bénévole, Firestore temps réel, tests.</p>
+                    <div class="tech-stack"><span class="technos">Flutter</span><span class="technos">Dart</span><span class="technos">Firebase</span></div>
                 </div>
             </a>
 
-            <a href="https://tanim-veer.github.io/nird-nuit-de-l-info-2025/" class="project-card glass-card">
+            <a href="https://github.com/tanim-veer/octoverso-c-game" class="project-card glass-card" data-cat="logiciel" target="_blank" rel="noopener">
                 <div class="project-image">
-                    <img src="img/nird.png" alt="Projet Nuit de l'Info">
-                    <div class="overlay"><i class="fas fa-leaf"></i></div>
+                    <img src="img/octoverso.png" alt="Capture d'une partie d'Octo Verso en console : rail recto/verso et main du joueur" loading="lazy">
                 </div>
                 <div class="project-content">
-                    <h3 data-i18n="p9_title">Sensibilisation NIRD</h3>
-                    <p class="project-description" data-i18n="p9_desc">
-                        Jeu narratif en ligne sur le numérique responsable (démarche NIRD), réalisé en équipe en une nuit lors de la Nuit de l'Info 2025. Éco-conçu, sans framework.
-                    </p>
-                    <p class="project-role" data-i18n="tech_used">Technologies utilisées :</p>
-                    <div class="tech-stack">
-                        <span class="technos">HTML</span><span class="technos">CSS</span><span class="technos">JavaScript</span>
-                    </div>
+                    <h3 data-i18n="p5_title">Octo Verso</h3>
+                    <p class="project-description" data-i18n="p5_desc">Jeu de lettres en console : former des mots sur un rail de tuiles double face. Gestion mémoire corrigée et testée.</p>
+                    <div class="tech-stack"><span class="technos">C</span></div>
                 </div>
             </a>
 
-            <a href="https://github.com/tanim-veer/octoverso-c-game" class="project-card glass-card">
+            <a href="https://tanim-veer.alwaysdata.net" class="project-card glass-card" data-cat="web" target="_blank" rel="noopener">
                 <div class="project-image">
-                    <img src="img/octoverso.png" alt="Capture d'une partie d'Octo Verso en console : rail recto/verso et coup joué">
-                    <div class="overlay"><i class="fas fa-font"></i></div>
+                    <img src="img/armee.png" alt="Page d'accueil refaite du site de l'Armée du Salut" loading="lazy">
+                    <div class="badges"><span class="badge demo" data-i18n="b_demo">Démo en ligne</span></div>
                 </div>
                 <div class="project-content">
-                    <h3 data-i18n="p5_title">Jeu de société : Octo Verso</h3>
-                    <p class="project-description" data-i18n="p5_desc">
-                        Jeu de lettres stratégique en C : former des mots avec des tuiles double-face sur un rail pivotant. Gestion du plateau, des tours et de la fin de partie.
-                    </p>
-                    <p class="project-role" data-i18n="tech_used">Technologies utilisées :</p>
-                    <div class="tech-stack">
-                        <span class="technos">C</span>
-                    </div>
+                    <h3 data-i18n="p1_title">Refonte du site de l'Armée du Salut</h3>
+                    <p class="project-description" data-i18n="p1_desc">Refonte UI/UX et accessibilité de plusieurs pages, avec une partie d'administration.</p>
+                    <div class="tech-stack"><span class="technos">HTML</span><span class="technos">CSS</span><span class="technos">JavaScript</span><span class="technos">PHP</span><span class="technos">MySQL</span></div>
                 </div>
             </a>
 
-            <a href="" class="project-card glass-card">
+            <a href="https://tanim-veer.github.io/nird-nuit-de-l-info-2025/" class="project-card glass-card" data-cat="web" target="_blank" rel="noopener">
                 <div class="project-image">
-                    <img src="img/absence.png" alt="">
-                    <div class="overlay"><i class="fas fa-user-clock"></i></div>
+                    <img src="img/nird.png" alt="Écran du jeu Résist'Classe réalisé à la Nuit de l'Info" loading="lazy">
+                    <div class="badges"><span class="badge demo" data-i18n="b_demo">Démo en ligne</span><span class="badge team" data-i18n="b_team">Équipe</span></div>
+                </div>
+                <div class="project-content">
+                    <h3 data-i18n="p9_title">Résist'Classe — Nuit de l'Info</h3>
+                    <p class="project-description" data-i18n="p9_desc">Jeu narratif sur le numérique responsable, réalisé en équipe en une nuit. Éco-conçu, sans framework.</p>
+                    <div class="tech-stack"><span class="technos">HTML</span><span class="technos">CSS</span><span class="technos">JavaScript</span></div>
+                </div>
+            </a>
+
+            <a href="https://github.com/tanim-veer/java-graphes-labyrinthe" class="project-card glass-card" data-cat="logiciel" target="_blank" rel="noopener">
+                <div class="project-image">
+                    <img src="img/dijkstra.png" alt="Visualisation d'un plus court chemin dans un graphe" loading="lazy">
+                </div>
+                <div class="project-content">
+                    <h3 data-i18n="p2_title">Graphes & labyrinthes</h3>
+                    <p class="project-description" data-i18n="p2_desc">Plus court chemin avec Dijkstra sur des graphes et des labyrinthes, avec visualisation de l'exploration.</p>
+                    <div class="tech-stack"><span class="technos">Java</span></div>
+                </div>
+            </a>
+
+            <article class="project-card glass-card is-static" data-cat="reseau">
+                <div class="project-image">
+                    <img src="img/reseau.png" alt="Topologie réseau d'entreprise dans Cisco Packet Tracer" loading="lazy">
+                    <div class="badges"><span class="badge soon" data-i18n="b_soon">Fichiers bientôt en ligne</span></div>
+                </div>
+                <div class="project-content">
+                    <h3 data-i18n="p7_title">Réseau d'entreprise</h3>
+                    <p class="project-description" data-i18n="p7_desc">Topologie complète simulée : routage, segmentation par VLAN et services DHCP, DNS et web.</p>
+                    <div class="tech-stack"><span class="technos">Cisco Packet Tracer</span></div>
+                </div>
+            </article>
+
+            <a href="https://github.com/tanim-veer/memory-game-vbnet" class="project-card glass-card" data-cat="logiciel" target="_blank" rel="noopener">
+                <div class="project-image">
+                    <img src="img/memorygame.jpeg" alt="Plateau du jeu de Memory" loading="lazy">
+                </div>
+                <div class="project-content">
+                    <h3 data-i18n="p3_title">Jeu de Memory</h3>
+                    <p class="project-description" data-i18n="p3_desc">Jeu à deux joueurs avec interface graphique, gestion des tours et du score.</p>
+                    <div class="tech-stack"><span class="technos">VB.NET</span></div>
+                </div>
+            </a>
+
+            <article class="project-card glass-card is-static" data-cat="logiciel">
+                <div class="project-image">
+                    <img src="img/absence.png" alt="Menu de l'application console de gestion des absences" loading="lazy">
+                    <div class="badges"><span class="badge soon" data-i18n="b_private">Code non publié</span></div>
                 </div>
                 <div class="project-content">
                     <h3 data-i18n="p4_title">Gestion d'absences</h3>
-                    <p class="project-description" data-i18n="p4_desc">
-                        Application console permettant de suivre les absences des étudiants, défaillance automatique après 5 absences, stockage et affichage des résultats.
-                    </p>
-                    <p class="project-role" data-i18n="tech_used">Technologies utilisées :</p>
-                    <div class="tech-stack">
-                        <span class="technos">C</span>
-                    </div>
+                    <p class="project-description" data-i18n="p4_desc">Application console de suivi des absences étudiantes, avec défaillance automatique après 5 absences.</p>
+                    <div class="tech-stack"><span class="technos">C</span></div>
                 </div>
-            </a>
+            </article>
         </div>
     </div>
 </section>
@@ -360,62 +355,55 @@
 <section class="contact" id="contact">
     <div class="container">
         <div class="contact-wrapper glass-card">
-
             <div class="contact-info">
-                <h2 data-i18n="contact_title" data-fr="Contact">Contact</h2>
+                <h2 data-i18n="contact_title">Contact</h2>
+                <p class="contact-intro" data-i18n="contact_intro">Une offre de stage, une question sur un projet ? Écrivez-moi, je réponds rapidement.</p>
                 <div class="contact-methods">
-                    <a href="https://www.linkedin.com/in/tanim-veer-06a89222b/" class="method-item">
-                        <i class="fab fa-linkedin"></i>
-                        <span data-i18n="contact_linkedin" data-fr="LinkedIn">LinkedIn</span>
-                    </a>
-
-                    <a href="https://github.com/tanimvr?tab=repositories" class="method-item">
-                        <i class="fab fa-github"></i>
-                        <span data-i18n="contact_github" data-fr="GitHub">GitHub</span>
-                    </a>
-
-                    <a href="mailto:veertanim@gmail.com" class="method-item">
-                        <i class="fas fa-envelope"></i>
-                        <span data-i18n="contact_email_text" data-fr="Email : veertanim@gmail.com">veertanim@gmail.com</span>
-                    </a>
-
-                    <a href="tel:+33758231289" class="method-item">
-                        <i class="fas fa-phone"></i>
-                        <span data-i18n="contact_phone" data-fr="Tél : +33 7 58 23 12 89">+33 7 58 23 12 89</span>
-                    </a>
-
-                    <a href="https://www.google.com/maps/place/Paris,+France" class="method-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span data-i18n="contact_location" data-fr="Localisation : Paris, Ile de France">Paris, Ile de France</span>
-                    </a>
+                    <a href="mailto:veertanim@gmail.com" class="method-item"><i class="fas fa-envelope" aria-hidden="true"></i><span>veertanim@gmail.com</span></a>
+                    <a href="tel:+33758231289" class="method-item"><i class="fas fa-phone" aria-hidden="true"></i><span>+33 7 58 23 12 89</span></a>
+                    <a href="https://www.linkedin.com/in/tanim-veer-06a89222b/" class="method-item" target="_blank" rel="noopener"><i class="fab fa-linkedin" aria-hidden="true"></i><span>LinkedIn</span></a>
+                    <a href="https://github.com/tanim-veer" class="method-item" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i><span>GitHub</span></a>
+                    <span class="method-item"><i class="fas fa-map-marker-alt" aria-hidden="true"></i><span data-i18n="contact_location">Paris, Île-de-France</span></span>
                 </div>
             </div>
 
-            <form class="contact-form">
-                <div class="form-group">
-                    <input type="text" required placeholder=" ">
-                    <label data-i18n="contact_name">Nom*</label>
-                </div>
+            <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                <input type="hidden" name="form-name" value="contact">
+                <p class="hidden-field"><label>Ne pas remplir : <input name="bot-field"></label></p>
 
                 <div class="form-group">
-                    <input type="email" required placeholder=" ">
-                    <label data-i18n="contact_email">Email*</label>
+                    <input type="text" id="f-name" name="nom" required placeholder=" " autocomplete="name">
+                    <label for="f-name" data-i18n="contact_name">Nom *</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="f-email" name="email" required placeholder=" " autocomplete="email">
+                    <label for="f-email" data-i18n="contact_email">Email *</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="f-msg" name="message" required placeholder=" "></textarea>
+                    <label for="f-msg" data-i18n="contact_msg">Message *</label>
                 </div>
 
-                <div class="form-group full">
-                    <textarea required placeholder=" "></textarea>
-                    <label data-i18n="contact_msg">Message*</label>
-                </div>
-
-                <button type="submit" class="cta-button primary" data-i18n="contact_send">
-                    Envoyer <i class="fas fa-paper-plane"></i>
-                </button>
+                <button type="submit" class="cta-button primary" data-i18n="contact_send">Envoyer <i class="fas fa-paper-plane"></i></button>
+                <p class="form-status" role="status" aria-live="polite"></p>
             </form>
         </div>
     </div>
 </section>
 
-<script src="js/script.js"></script>
+</main>
 
+<footer class="footer">
+    <div class="container footer-content">
+        <p>© <span id="year">2026</span> Tanim VEER · <span data-i18n="footer_made">Site fait main en HTML, CSS et JavaScript</span></p>
+        <ul class="footer-links">
+            <li><a href="https://github.com/tanim-veer" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/tanim-veer-06a89222b/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="#home" data-i18n="footer_top">Haut de page ↑</a></li>
+        </ul>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>

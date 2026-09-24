@@ -1,57 +1,27 @@
-# 🌐 Portfolio
+# 🌐 Portfolio — Tanim VEER
 
-Projet personnel – **BUT2 Informatique** – Recherche de stage  
-Réalisé par : **VEER Tanim**
+**[tanim-veer.fr](https://tanim-veer.fr)** · Étudiant en BUT3 Informatique (parcours Data & IA) à l'Université Paris Cité, à la recherche d'un stage de 3 mois ou plus à partir de février 2027.
 
----
+![Aperçu du portfolio](img/og-image.png)
 
-## 🎯 Objectif
+## Contenu
 
-L’objectif de ce projet est de **présenter mon profil**, de **mettre en valeur mes projets**, et de **faciliter le contact** des recruteurs via un site web **clair, responsive et rapide** :
-- Présentation des compétences clés (Web, Java, SQL, Git…)
-- Mise en avant des projets (SAE, persos) avec liens GitHub
-- Accès rapide aux informations de contact (mail, LinkedIn)
-- Possibilité d’héberger le CV
+- **À propos** et **parcours** : formation, freelance, hackathons et engagements
+- **Compétences** par domaine : langages, données, back-end, web et mobile, système et réseau, qualité
+- **Projets** filtrables par domaine, avec les liens vers le code et les démos en ligne
+- **Contact** : formulaire, email, LinkedIn, GitHub
 
-Le but est à la fois **pédagogique** (bonne pratique front, structure propre) et **applicatif** (portfolio réel pour candidatures).
+## Technique
 
----
+- HTML, CSS et JavaScript, sans framework ni étape de build
+- Version anglaise complète : le texte français est écrit dans le HTML, `js/script.js` ne contient que les traductions anglaises
+- Thème clair ou sombre (suit par défaut le réglage du système), menu adapté au mobile
+- Formulaire de contact géré par Netlify Forms, envoyé sans recharger la page
+- Accessibilité : lien d'évitement, textes alternatifs, navigation au clavier, respect de `prefers-reduced-motion`
+- Référencement : balises Open Graph avec image d'aperçu, données structurées `Person`, sitemap et `robots.txt`
+- Hébergé sur Netlify, déployé automatiquement à chaque push sur `main`
 
-## 🛠️ Technologies & Architecture
+## Lancer en local
 
-- **Langages :** HTML, CSS, JavaScript  
-- **Outils :** VS Code, Git, Netlify / GitHub Pages  
-- **Versioning :** GitHub
-
----
-
-## ▶️ Lancement rapide
-- Prérequis : navigateur récent (site statique)  
-- `git clone https://github.com/tanim-veer/Portfolio.git`  
-- `cd Portfolio`  
-- Ouvrir `index.html` dans le navigateur (ou via Live Server)  
-
----
-
-## ✅ Fonctionnalités clés
-- Design **responsive** (mobile / tablette / desktop)
-- Section **Projets** avec liens GitHub
-- Section **Compétences**
-- Section **Contact**
-- Option **CV PDF** téléchargeable
-- Déploiement simple (Netlify / GitHub Pages)
-
----
-
-## 🔍 Points techniques intéressants
-- HTML sémantique + structure claire
-- CSS organisé (variables, sections)
-- Optimisation du poids des images
-- Accessibilité de base (contrastes, balises alt)
-- Déploiement continu possible via GitHub → Netlify
-
----
-
-## 📚 Notes
-- Contraintes : lisibilité, rapidité, sobriété, liens vérifiables.  
-- Limites / améliorations futures : dark mode, formulaire de contact, version anglaise, page admin.
+Aucune installation : servir le dossier, par exemple avec `python -m http.server`, puis ouvrir `http://localhost:8000`.
+Le formulaire de contact ne fonctionne qu'une fois déployé sur Netlify.
