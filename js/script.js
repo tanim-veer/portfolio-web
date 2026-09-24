@@ -59,7 +59,7 @@ const I18N = {
         p11_title: "Où faire le plein",
         p11_desc: "Trouve la station la moins chère en tenant compte du vrai détour routier (OSRM).",
         p12_title: "OpenMinds",
-        p12_desc: "App mobile de formation des bénévoles (quiz, badges, sessions), en équipe de 6 : Flutter et tests.",
+        p12_desc: "App mobile de formation des bénévoles pour France Bénévolat, en équipe de 6. Mon rôle : tableau de bord bénévole, Firestore temps réel, tests.",
 
         tech_used: "Technologies utilisées :",
 
@@ -109,7 +109,7 @@ const I18N = {
         p11_title: "Where to fill up",
         p11_desc: "Finds the cheapest gas station accounting for the real driving detour (OSRM).",
         p12_title: "OpenMinds",
-        p12_desc: "Mobile app for volunteer training (quizzes, badges, sessions), team of 6: Flutter and tests.",
+        p12_desc: "Volunteer training mobile app for France Bénévolat, team of 6. My part: volunteer dashboard, real-time Firestore, tests.",
 
         tech_used: "Technologies used:",
 
