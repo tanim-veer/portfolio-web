@@ -73,7 +73,6 @@ const EN = {
     b_demo: "Live demo",
     b_team: "Team",
     b_soon: "Files coming soon",
-    b_private: "Code not published",
 
     p11_title: "Where to fill up",
     p11_desc: "Finds the cheapest gas station by accounting for the real driving detour (OSRM routing), using official real-time prices.",
@@ -95,8 +94,6 @@ const EN = {
     p7_desc: "Full simulated topology: routing, VLAN segmentation and DHCP, DNS and web services.",
     p3_title: "Memory game",
     p3_desc: "Two-player game with a graphical interface, turn handling and scoring.",
-    p4_title: "Attendance tracker",
-    p4_desc: "Console app tracking student absences, with automatic failure after 5 absences.",
 
     contact_title: "Contact",
     contact_intro: "An internship offer, a question about a project? Write to me, I reply quickly.",
