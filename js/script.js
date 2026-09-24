@@ -21,7 +21,7 @@ const EN = {
 
     about_title: "About",
     about_p1: "I'm in the third year of a Computer Science degree (BUT) at Université Paris Cité (IUT Paris Rives de Seine), in the <strong>Data & AI</strong> track. What I enjoy is building tools that are genuinely useful: an app that finds the cheapest gas station along a route, a VPN set up end to end, a chess engine that talks to a real interface.",
-    about_p2: "Alongside my studies, I've been building websites as a freelancer since 2024, and I take part in events such as the Nuit de l'Info hackathon and VivaTech. I enjoy teamwork as much as getting to the bottom of a problem.",
+    about_p2: "Alongside my studies, I take part in events such as the Nuit de l'Info hackathon and VivaTech. I enjoy teamwork as much as getting to the bottom of a problem.",
     fact_school_t: "Education",
     fact_school: "3rd-year Computer Science, Data & AI track",
     fact_avail_t: "Availability",
@@ -33,9 +33,6 @@ const EN = {
 
     journey_title: "Background",
     journey_exp: "Experience",
-    exp1_when: "Nov. 2024 — present",
-    exp1_title: "Freelance web developer",
-    exp1_desc: "Designed and launched two websites for local clients, including an e-commerce site.",
     exp2_when: "Dec. 2025",
     exp2_title: "Nuit de l'Info — hackathon",
     exp2_desc: "Built a web app about responsible tech as a team in a single night, and coordinated the team's Git workflow.",
