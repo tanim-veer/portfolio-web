@@ -6,7 +6,7 @@
 
 ## Contenu
 
-- **À propos** et **parcours** : formation, freelance, hackathons et engagements
+- **À propos** et **parcours** : formation, hackathon et engagements
 - **Compétences** par domaine : langages, données, back-end, web et mobile, système et réseau, qualité
 - **Projets** filtrables par domaine, avec les liens vers le code et les démos en ligne
 - **Contact** : formulaire, email, LinkedIn, GitHub
