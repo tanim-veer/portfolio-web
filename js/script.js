@@ -98,7 +98,7 @@ const EN = {
     p2_title: "Graphs & mazes",
     p2_desc: "Shortest paths with Dijkstra on graphs and mazes, with a visualisation of the search.",
     p7_title: "Company network",
-    p7_desc: "Full simulated topology: routing, VLAN segmentation and DHCP, DNS and web services.",
+    p7_desc: "Simulated multi-site network: 3 routers running RIP, redundant DHCP relayed across subnets, DNS and web services.",
     p3_title: "Memory game",
     p3_desc: "Two-player game with a graphical interface, turn handling and scoring.",
 
