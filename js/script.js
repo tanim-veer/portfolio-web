@@ -75,7 +75,6 @@ const EN = {
     f_soft: "Software & algorithms",
     b_demo: "Live demo",
     b_team: "Team",
-    b_soon: "Files coming soon",
 
     p11_title: "Where to fill up",
     p11_desc: "Finds the cheapest gas station by accounting for the real driving detour (OSRM routing), using official real-time prices.",
