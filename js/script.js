@@ -87,7 +87,7 @@ const EN = {
     p6_title: "UCI chess engine",
     p6_desc: "Engine for the King + Rook vs King endgame, compatible with UCI interfaces such as ChessX. Clean Architecture and tests.",
     p12_title: "OpenMinds",
-    p12_desc: "Volunteer training mobile app for France Bénévolat, built by a team of 6. My part: participants screen for trainers, functional testing and bug tracking.",
+    p12_desc: "Volunteer training mobile app for France Bénévolat, built by a team of 6. My part: volunteer dashboard, real-time Firestore, tests.",
     p15_title: "PowerHome",
     p15_desc: "Android app for an eco-friendly residence: residents book their appliances during off-peak hours and earn eco-coins. Team of 3, with a secured and tested PHP/MySQL API.",
     p5_title: "Octo Verso",
