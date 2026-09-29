@@ -87,7 +87,7 @@ const EN = {
     p6_title: "UCI chess engine",
     p6_desc: "Engine for the King + Rook vs King endgame, compatible with UCI interfaces such as ChessX. Clean Architecture and tests.",
     p12_title: "OpenMinds",
-    p12_desc: "Volunteer training mobile app for France Bénévolat, built by a team of 6. My part: volunteer dashboard, real-time Firestore, tests.",
+    p12_desc: "Volunteer training mobile app for France Bénévolat, built by a team of 6. My part: participants screen for trainers, functional testing and bug tracking.",
     p15_title: "PowerHome",
     p15_desc: "Android app for an eco-friendly residence: residents book their appliances during off-peak hours and earn eco-coins. Team of 3, with a secured and tested PHP/MySQL API.",
     p5_title: "Octo Verso",
@@ -101,7 +101,7 @@ const EN = {
     p7_title: "Company network",
     p7_desc: "Simulated multi-site network: 3 routers running RIP, redundant DHCP relayed across subnets, DNS and web services.",
     p3_title: "Memory game",
-    p3_desc: "Two-player game with a graphical interface, turn handling and scoring.",
+    p3_desc: "Solo memory game against the clock, built by a team of 4: two themes, three durations, hint, pause and a score board.",
 
     contact_title: "Contact",
     contact_intro: "An internship offer, a question about a project? Write to me, I reply quickly.",
